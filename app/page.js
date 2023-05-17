@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Welcome from "./components/Welcome";
+// import { About, Welcome } from "./components";
+import About from "./components/About";
 
 export default function Home() {
   return (
@@ -10,7 +12,7 @@ export default function Home() {
           <Welcome />
         </div>
 
-        {/* <About /> */}
+        <About />
 
         {/* <WorkshopGreeting /> */}
         {/* <FinishedProjects /> */}
