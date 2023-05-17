@@ -10,18 +10,21 @@ Title: camping buscraft ambience
 import React, { useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 
-export function Camp(props) {
+export function Camp(isMobile) {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF("/camp-transformed.glb");
   const { actions } = useAnimations(animations, group);
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group
+      scale={isMobile ? 0.7 : 1}
+      // position={isMobile ? [0, -3, -6] : [5, -3, -10]}
+      dispose={null}
+      // rotation={[-0.01, -0.2, -0.1]}
+      rotation={[Math.PI / 2, 0, 0]}
+    >
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
-          <group
-            name="f57d262c2aa44061846a12a5a8f3c5ddfbx"
-            rotation={[Math.PI / 2, 0, 0]}
-          >
+          <group name="f57d262c2aa44061846a12a5a8f3c5ddfbx">
             <group name="Object_2">
               <group name="RootNode">
                 <group

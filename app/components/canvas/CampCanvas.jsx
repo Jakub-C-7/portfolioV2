@@ -34,16 +34,21 @@ const CampCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{
+        // position: [15.92, 6.04, -0.97],
+        position: [15.92, 6.04, -0.97],
+        fov: 50,
+        rotation: [-94.16, 69.2, 94.45],
+      }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
+          maxPolarAngle={Math.PI / 2} // Stop users scrolling below the camp
+          // minPolarAngle={Math.PI / 2}
         />
-        <Camp isMobile={isMobile} />
+        <Camp className="w-1/2 h-1/2 " isMobile={isMobile} />
       </Suspense>
 
       <Preload all />
