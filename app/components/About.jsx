@@ -11,14 +11,14 @@ import ComponentLayout from "./layout";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt className="sm:w-[175px] w-full">
+    <Tilt className="sm:w-[175px] w-full cursor-pointer">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <div
           options={{ max: 45, scale: 1, speed: 450 }}
-          className="bg-secondary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+          className="bg-secondary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col select-none pointer-events-none"
         >
           <Image src={icon} alt={title} className="w-16 h-16 object-contain" />
           <h3 className="text-primary text-[20px] font-bold text-center">
@@ -45,7 +45,7 @@ const About = () => {
           </div>
         </motion.div>
 
-        <div className="flex mb-10 gap-10 sm:justify-start sm:flex-row flex-col">
+        <div className="flex mb-10 gap-10 sm:justify-start sm:flex-row flex-col select-none pointer-events-none">
           <motion.div className="mx-auto" variants={textVariant()}>
             <Image
               className="sm:object-cover object-scale-down rounded-lg w-[150px] h-[150px] sm:w-[250px] sm:h-[250px] "
@@ -74,7 +74,10 @@ const About = () => {
           </div>
         </div>
 
-        <motion.p className="mt-20 mb-0" variants={fadeIn("", "", 0.1, 1)}>
+        <motion.p
+          className="mt-20 mb-0  select-none pointer-events-none"
+          variants={fadeIn("", "", 0.1, 1)}
+        >
           come on down, <span className="text-tertiary">find out more </span>{" "}
           about me!
         </motion.p>

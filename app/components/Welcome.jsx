@@ -8,7 +8,7 @@ const Welcome = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
-        className={`${styles.paddingX} absolute inset-0 bottom-[60px] max-w-7xl mx-auto flex flex-row items-end gap-5`}
+        className={`${styles.paddingX} absolute inset-0 bottom-[80px] max-w-7xl mx-auto flex flex-row items-end gap-5`}
       >
         {/* <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#FF3562]"></div>
@@ -19,7 +19,9 @@ const Welcome = () => {
           <h1 className={`${styles.headText} text-white`}>
             hi, I'm <span className="text-[#FF3562]">Jakub</span>
           </h1>
-          <p className={`${styles.subTextAlt2}`}>welcome to my base-camp</p>
+          <p className={`${styles.subTextAlt2} pl-10`}>
+            welcome to my base-camp
+          </p>
         </div>
       </div>
 

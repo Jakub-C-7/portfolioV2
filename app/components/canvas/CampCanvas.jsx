@@ -32,6 +32,7 @@ const CampCanvas = () => {
 
   return (
     <Canvas
+      className="cursor-pointer"
       frameloop="demand"
       shadows
       camera={{
