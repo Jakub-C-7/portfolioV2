@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+"use client";
 
-export default class WorkshopGreeting extends Component {
-  render() {
-    return <div>WorkshopGreeting</div>;
-  }
-}
+const WorkshopGreeting = () => {
+  return <div>WorkshopGreeting</div>;
+};
+
+export default WorkshopGreeting;

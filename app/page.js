@@ -1,6 +1,13 @@
 import Image from "next/image";
 import Welcome from "./components/Welcome";
-// import { About, Welcome } from "./components";
+import {
+  WorkshopGreeting,
+  FinishedProjects,
+  InProgressProjects,
+  SkillsCertsGreeting,
+  SkillsCerts,
+  Contact,
+} from "./components";
 import About from "./components/About";
 
 export default function Home() {
@@ -14,12 +21,13 @@ export default function Home() {
 
         <About />
 
-        {/* <WorkshopGreeting /> */}
-        {/* <FinishedProjects /> */}
-        {/* <InProgressProjects /> */}
+        <WorkshopGreeting />
+        <FinishedProjects />
+        <InProgressProjects />
 
-        {/* <SkillsCertsGreeting /> */}
-        {/* <SkillsCerts /> */}
+        <SkillsCertsGreeting />
+        <SkillsCerts />
+        <Contact />
 
         <div className="relative z-0">{/* <Contact /> */}</div>
       </div>

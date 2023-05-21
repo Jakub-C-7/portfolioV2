@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+"use client";
 
-export default class InProgressProjects extends Component {
-  render() {
-    return <div>InProgressProjects</div>;
-  }
-}
+const InProgressProjects = () => {
+  return <div>InProgressProjects</div>;
+};
+
+export default InProgressProjects;

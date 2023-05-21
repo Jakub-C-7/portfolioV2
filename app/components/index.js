@@ -1,12 +1,23 @@
-import { CampCanvas } from "./canvas";
+import { CampCanvas } from "./canvas/CampCanvas";
 import Welcome from "./Welcome";
 import Navbar from "./Navbar";
 import About from "./About";
-// import Contact from "./Contact";
-// import FinishedProjects from "./FinishedProjects";
-// import InProgressProjects from "./InProgressProjects";
-// import WorkshopGreeting from "./WorkshopGreeting";
-// import SkillsCerts from "./SkillsCerts";
-// import SkillsCertsGreeting from "./SkillsCertsGreeting";
+import WorkshopGreeting from "./WorkshopGreeting";
+import FinishedProjects from "./FinishedProjects";
+import InProgressProjects from "./InProgressProjects";
+import SkillsCertsGreeting from "./SkillsCertsGreeting";
+import SkillsCerts from "./SkillsCerts";
+import Contact from "./Contact";
 
-export { Navbar, Welcome, CampCanvas, About };
+export {
+  Navbar,
+  Welcome,
+  CampCanvas,
+  About,
+  WorkshopGreeting,
+  FinishedProjects,
+  InProgressProjects,
+  SkillsCertsGreeting,
+  SkillsCerts,
+  Contact,
+};

@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+"use client";
 
-export default class FinishedProjects extends Component {
-  render() {
-    return <div>FinishedProjects</div>;
-  }
-}
+const FinishedProjects = () => {
+  return <div>FinishedProjects</div>;
+};
+
+export default FinishedProjects;
