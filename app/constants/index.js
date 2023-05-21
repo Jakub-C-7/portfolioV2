@@ -1,8 +1,4 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   typescript,
   html,
@@ -23,6 +19,11 @@ import {
   jobit,
   tripguide,
   threejs,
+  blackhole,
+  coding,
+  computer,
+  idea,
+  network,
 } from "../assets";
 
 export const navLinks = [
@@ -43,19 +44,19 @@ export const navLinks = [
 const services = [
   {
     title: "Web Developer",
-    icon: web,
+    icon: coding,
   },
   {
     title: "Full-Stack Engineer",
-    icon: mobile,
+    icon: computer,
   },
   {
     title: "Cloud Developer",
-    icon: backend,
+    icon: network,
   },
   {
     title: "Problem Solver",
-    icon: creator,
+    icon: idea,
   },
 ];
 
