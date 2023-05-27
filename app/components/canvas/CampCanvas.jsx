@@ -40,14 +40,16 @@ const CampCanvas = () => {
         position: [15.92, 6.04, -0.97],
         fov: 50,
         rotation: [-94.16, 69.2, 94.45],
+        near: 0.1,
       }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
-          maxPolarAngle={Math.PI / 2} // Stop users scrolling below the camp
-          // minPolarAngle={Math.PI / 2}
+          maxPolarAngle={Math.PI / 2 - 0.3} // Stop users scrolling below the camp
+          // minAzimuthAngle={0.5}
+          // minPolarAngle={Math.PI / 2 - 0.4}
         />
         <Camp className="w-1/2 h-1/2 " isMobile={isMobile} />
       </Suspense>
