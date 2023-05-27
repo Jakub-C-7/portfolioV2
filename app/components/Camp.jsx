@@ -17,7 +17,7 @@ export function Camp(isMobile) {
   return (
     <group
       // frustumCulled={false}
-      scale={isMobile ? 0.7 : 1}
+      scale={isMobile.isMobile ? 0.6 : 0.8}
       // position={isMobile ? [0, -3, -6] : [5, -3, -10]}
       dispose={null}
       // rotation={[-0.01, -0.2, -0.1]}
