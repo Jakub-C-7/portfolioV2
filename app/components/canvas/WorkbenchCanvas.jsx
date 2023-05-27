@@ -4,9 +4,9 @@ import { Suspense, useEffect, useState } from "react";
 import { Canvas, useLoader } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
-import { Camp } from "../Camp";
+import { Workbench } from "../Workbench";
 
-const CampCanvas = () => {
+const WorkbenchCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   // Check if the user is on a mobile device dependent on screen width
@@ -32,7 +32,7 @@ const CampCanvas = () => {
 
   return (
     <Canvas
-      className="cursor-pointer"
+      className="cursor-pointer sm:pl-72"
       frameloop="demand"
       shadows
       camera={{
@@ -46,11 +46,10 @@ const CampCanvas = () => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
-          maxPolarAngle={Math.PI / 2 - 0.3} // Stop users scrolling below the camp
-          // minAzimuthAngle={0.5}
-          // minPolarAngle={Math.PI / 2 - 0.4}
+          maxPolarAngle={Math.PI / 2 - 0.3} // Stop users scrolling below
         />
-        <Camp className="w-1/2 h-1/2 " isMobile={isMobile} />
+
+        <Workbench isMobile={isMobile} />
       </Suspense>
 
       <Preload all />
@@ -58,4 +57,4 @@ const CampCanvas = () => {
   );
 };
 
-export default CampCanvas;
+export default WorkbenchCanvas;
