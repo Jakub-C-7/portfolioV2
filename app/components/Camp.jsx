@@ -16,7 +16,6 @@ export function Camp(isMobile) {
   const { actions } = useAnimations(animations, group);
   return (
     <group
-      // frustumCulled={false}
       scale={isMobile.isMobile ? 0.6 : 0.8}
       // position={isMobile ? [0, -3, -6] : [5, -3, -10]}
       dispose={null}
