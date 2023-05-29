@@ -7,71 +7,218 @@ Source: https://sketchfab.com/3d-models/stylized-hand-painted-scene-30ddd6d6d8a6
 Title: Stylized hand painted scene
 */
 
-import React, { useRef } from 'react'
-import { useGLTF, useAnimations } from '@react-three/drei'
+import React, { useRef } from "react";
+import { useGLTF, useAnimations } from "@react-three/drei";
 
-export function Model(props) {
-  const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/tree_swing-transformed.glb')
-  const { actions } = useAnimations(animations, group)
+export function TreeSwing(isMobile) {
+  const group = useRef();
+  const { nodes, materials, animations } = useGLTF(
+    "/tree_swing-transformed.glb"
+  );
+  const { actions } = useAnimations(animations, group);
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group
+      scale={isMobile.isMobile ? 1 : 1}
+      dispose={null}
+      // rotation={[0, 0.7, 0]}
+      position={isMobile.isMobile ? [0, -20, 0] : [0, 0, 0]}
+    >
+      <hemisphereLight
+        intensity={0.5}
+        position={[18.6, -15.8, 25.9]}
+        groundColor="orange"
+      />
+      {/* <ambientLight color={0x404040} intensity={0.5}></ambientLight> */}
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
-          <group name="eea6f6fcb0454f068882665e88815bd1fbx" rotation={[Math.PI / 2, 0, 0]}>
+          <group
+            name="eea6f6fcb0454f068882665e88815bd1fbx"
+            rotation={[Math.PI / 2, 0, 0]}
+          >
             <group name="Object_2">
               <group name="RootNode">
                 <group name="Object_4">
-                  <group name="to_anim_leaf_1" position={[-22.55, 82.86, -35.08]} rotation={[-1.01, 0, 3.07]} scale={0.6}>
-                    <mesh name="to_anim_leaf_1_gras_and_veg_0" geometry={nodes.to_anim_leaf_1_gras_and_veg_0.geometry} material={materials.gras_and_veg} />
+                  <group
+                    name="to_anim_leaf_1"
+                    position={[-22.55, 82.86, -35.08]}
+                    rotation={[-1.01, 0, 3.07]}
+                    scale={0.6}
+                  >
+                    <mesh
+                      name="to_anim_leaf_1_gras_and_veg_0"
+                      geometry={nodes.to_anim_leaf_1_gras_and_veg_0.geometry}
+                      material={materials.gras_and_veg}
+                    />
                   </group>
-                  <group name="to_anim_leaf_003" position={[1.99, 116.23, -32.25]} rotation={[-2.23, -0.62, 1.82]} scale={0.6}>
-                    <mesh name="to_anim_leaf_003_gras_and_veg_0" geometry={nodes.to_anim_leaf_003_gras_and_veg_0.geometry} material={materials.gras_and_veg} />
+                  <group
+                    name="to_anim_leaf_003"
+                    position={[1.99, 116.23, -32.25]}
+                    rotation={[-2.23, -0.62, 1.82]}
+                    scale={0.6}
+                  >
+                    <mesh
+                      name="to_anim_leaf_003_gras_and_veg_0"
+                      geometry={nodes.to_anim_leaf_003_gras_and_veg_0.geometry}
+                      material={materials.gras_and_veg}
+                    />
                   </group>
-                  <group name="to_anim_leaf_004" position={[33.31, 87.8, -54.32]} rotation={[-2.23, -0.62, 1.82]} scale={0.6}>
-                    <mesh name="to_anim_leaf_004_gras_and_veg_0" geometry={nodes.to_anim_leaf_004_gras_and_veg_0.geometry} material={materials.gras_and_veg} />
+                  <group
+                    name="to_anim_leaf_004"
+                    position={[33.31, 87.8, -54.32]}
+                    rotation={[-2.23, -0.62, 1.82]}
+                    scale={0.6}
+                  >
+                    <mesh
+                      name="to_anim_leaf_004_gras_and_veg_0"
+                      geometry={nodes.to_anim_leaf_004_gras_and_veg_0.geometry}
+                      material={materials.gras_and_veg}
+                    />
                   </group>
                   <primitive object={nodes._rootJoint} />
                   <group name="rock_2" position={[357.66, -44.37, 0]}>
-                    <mesh name="rock_2_stones_0" geometry={nodes.rock_2_stones_0.geometry} material={materials.stones} />
+                    <mesh
+                      name="rock_2_stones_0"
+                      geometry={nodes.rock_2_stones_0.geometry}
+                      material={materials.stones}
+                    />
                   </group>
-                  <group name="leafs" position={[38.87, 14.37, 2.37]} rotation={[0, 0, 0.26]} scale={[1.83, 2.01, 2.31]}>
-                    <group name="Object_18" position={[146.83, -137.87, -11.84]}>
-                      <mesh name="leafs_gras_and_veg_0" geometry={nodes.leafs_gras_and_veg_0.geometry} material={materials.gras_and_veg} />
+                  <group
+                    name="leafs"
+                    position={[38.87, 14.37, 2.37]}
+                    rotation={[0, 0, 0.26]}
+                    scale={[1.83, 2.01, 2.31]}
+                  >
+                    <group
+                      name="Object_18"
+                      position={[146.83, -137.87, -11.84]}
+                    >
+                      <mesh
+                        name="leafs_gras_and_veg_0"
+                        geometry={nodes.leafs_gras_and_veg_0.geometry}
+                        material={materials.gras_and_veg}
+                      />
                     </group>
                   </group>
-                  <group name="Plane009" position={[-4.55, 7.51, -44.36]} rotation={[-1.71, 0.08, -2.61]} scale={0.84}>
-                    <mesh name="Plane009_gras_and_veg_0" geometry={nodes.Plane009_gras_and_veg_0.geometry} material={materials.gras_and_veg} />
+                  <group
+                    name="Plane009"
+                    position={[-4.55, 7.51, -44.36]}
+                    rotation={[-1.71, 0.08, -2.61]}
+                    scale={0.84}
+                  >
+                    <mesh
+                      name="Plane009_gras_and_veg_0"
+                      geometry={nodes.Plane009_gras_and_veg_0.geometry}
+                      material={materials.gras_and_veg}
+                    />
                   </group>
-                  <group name="Plane007" position={[-8.78, 27.68, 7.89]} rotation={[-1.46, -0.17, -0.56]}>
-                    <mesh name="Plane007_gras_and_veg_0" geometry={nodes.Plane007_gras_and_veg_0.geometry} material={materials.gras_and_veg} />
+                  <group
+                    name="Plane007"
+                    position={[-8.78, 27.68, 7.89]}
+                    rotation={[-1.46, -0.17, -0.56]}
+                  >
+                    <mesh
+                      name="Plane007_gras_and_veg_0"
+                      geometry={nodes.Plane007_gras_and_veg_0.geometry}
+                      material={materials.gras_and_veg}
+                    />
                   </group>
-                  <group name="Plane010" position={[4.38, 19.86, -27.14]} rotation={[-1.63, -1.17, -2.57]} scale={0.84}>
-                    <mesh name="Plane010_gras_and_veg_0" geometry={nodes.Plane010_gras_and_veg_0.geometry} material={materials.gras_and_veg} />
+                  <group
+                    name="Plane010"
+                    position={[4.38, 19.86, -27.14]}
+                    rotation={[-1.63, -1.17, -2.57]}
+                    scale={0.84}
+                  >
+                    <mesh
+                      name="Plane010_gras_and_veg_0"
+                      geometry={nodes.Plane010_gras_and_veg_0.geometry}
+                      material={materials.gras_and_veg}
+                    />
                   </group>
-                  <group name="Plane005" position={[6.81, 18.33, 19.02]} rotation={[-1.06, 0.24, -0.42]}>
-                    <mesh name="Plane005_gras_and_veg_0" geometry={nodes.Plane005_gras_and_veg_0.geometry} material={materials.gras_and_veg} />
+                  <group
+                    name="Plane005"
+                    position={[6.81, 18.33, 19.02]}
+                    rotation={[-1.06, 0.24, -0.42]}
+                  >
+                    <mesh
+                      name="Plane005_gras_and_veg_0"
+                      geometry={nodes.Plane005_gras_and_veg_0.geometry}
+                      material={materials.gras_and_veg}
+                    />
                   </group>
-                  <group name="Plane003" position={[-22.54, -23.56, 37.33]} rotation={[-0.72, -0.16, -0.02]}>
-                    <mesh name="Plane003_gras_and_veg_0" geometry={nodes.Plane003_gras_and_veg_0.geometry} material={materials.gras_and_veg} />
+                  <group
+                    name="Plane003"
+                    position={[-22.54, -23.56, 37.33]}
+                    rotation={[-0.72, -0.16, -0.02]}
+                  >
+                    <mesh
+                      name="Plane003_gras_and_veg_0"
+                      geometry={nodes.Plane003_gras_and_veg_0.geometry}
+                      material={materials.gras_and_veg}
+                    />
                   </group>
                   <group name="tree" position={[-66.6, 96.43, -24.37]}>
-                    <mesh name="tree_tree_0" geometry={nodes.tree_tree_0.geometry} material={materials.tree} />
+                    <mesh
+                      name="tree_tree_0"
+                      geometry={nodes.tree_tree_0.geometry}
+                      material={materials.tree}
+                    />
                   </group>
-                  <group name="Plane006" position={[-13.55, 20.64, 19.02]} rotation={[-1.01, -0.17, -0.56]}>
-                    <mesh name="Plane006_gras_and_veg_0" geometry={nodes.Plane006_gras_and_veg_0.geometry} material={materials.gras_and_veg} />
+                  <group
+                    name="Plane006"
+                    position={[-13.55, 20.64, 19.02]}
+                    rotation={[-1.01, -0.17, -0.56]}
+                  >
+                    <mesh
+                      name="Plane006_gras_and_veg_0"
+                      geometry={nodes.Plane006_gras_and_veg_0.geometry}
+                      material={materials.gras_and_veg}
+                    />
                   </group>
-                  <group name="Plane002" position={[36.83, 13.93, 11.13]} rotation={[-1.2, 0.08, 0.26]}>
-                    <mesh name="Plane002_gras_and_veg_0" geometry={nodes.Plane002_gras_and_veg_0.geometry} material={materials.gras_and_veg} />
+                  <group
+                    name="Plane002"
+                    position={[36.83, 13.93, 11.13]}
+                    rotation={[-1.2, 0.08, 0.26]}
+                  >
+                    <mesh
+                      name="Plane002_gras_and_veg_0"
+                      geometry={nodes.Plane002_gras_and_veg_0.geometry}
+                      material={materials.gras_and_veg}
+                    />
                   </group>
-                  <group name="Plane004" position={[9.13, 14.94, 20.67]} rotation={[-0.89, 0.5, 0.09]}>
-                    <mesh name="Plane004_gras_and_veg_0" geometry={nodes.Plane004_gras_and_veg_0.geometry} material={materials.gras_and_veg} />
+                  <group
+                    name="Plane004"
+                    position={[9.13, 14.94, 20.67]}
+                    rotation={[-0.89, 0.5, 0.09]}
+                  >
+                    <mesh
+                      name="Plane004_gras_and_veg_0"
+                      geometry={nodes.Plane004_gras_and_veg_0.geometry}
+                      material={materials.gras_and_veg}
+                    />
                   </group>
-                  <group name="Plane008" position={[-19.57, 7.51, -37.4]} rotation={[-1.58, -0.17, -0.56]}>
-                    <mesh name="Plane008_gras_and_veg_0" geometry={nodes.Plane008_gras_and_veg_0.geometry} material={materials.gras_and_veg} />
+                  <group
+                    name="Plane008"
+                    position={[-19.57, 7.51, -37.4]}
+                    rotation={[-1.58, -0.17, -0.56]}
+                  >
+                    <mesh
+                      name="Plane008_gras_and_veg_0"
+                      geometry={nodes.Plane008_gras_and_veg_0.geometry}
+                      material={materials.gras_and_veg}
+                    />
                   </group>
-                  <skinnedMesh name="Object_7" geometry={nodes.Object_7.geometry} material={materials.gras_and_veg} skeleton={nodes.Object_7.skeleton} />
-                  <skinnedMesh name="Object_9" geometry={nodes.Object_9.geometry} material={materials.swing} skeleton={nodes.Object_9.skeleton} />
+                  <skinnedMesh
+                    name="Object_7"
+                    geometry={nodes.Object_7.geometry}
+                    material={materials.gras_and_veg}
+                    skeleton={nodes.Object_7.skeleton}
+                  />
+                  <skinnedMesh
+                    name="Object_9"
+                    geometry={nodes.Object_9.geometry}
+                    material={materials.swing}
+                    skeleton={nodes.Object_9.skeleton}
+                  />
                 </group>
               </group>
             </group>
@@ -79,7 +226,7 @@ export function Model(props) {
         </group>
       </group>
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/tree_swing-transformed.glb')
+useGLTF.preload("/tree_swing-transformed.glb");
