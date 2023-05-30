@@ -188,6 +188,7 @@ export function Camp(isMobile) {
                     name="pDisc1_lambert3_0"
                     geometry={nodes.pDisc1_lambert3_0.geometry}
                     material={materials.lambert3}
+                    renderOrder={-1}
                   />
                 </group>
                 <group name="pCylinder29" position={[0.03, 1.5, 0.1]}>
