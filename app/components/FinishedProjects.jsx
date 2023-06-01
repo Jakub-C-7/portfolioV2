@@ -31,7 +31,7 @@ const FinishedProjects = () => {
           {finishedProjects.map((project, index) => (
             <motion.div
               variants={textVariant()}
-              className="rounded-lg bg-[#211e35] p-6"
+              className="rounded-lg bg-[#211e35] p-6 w-full h-full"
               key={index}
             >
               <motion.div
@@ -39,7 +39,7 @@ const FinishedProjects = () => {
                 variants={textVariant()}
               >
                 <Link href={project.source_code_link}>
-                  <h3 className="hover:underline">{project.name}</h3>
+                  <h3 className="hover:underline mb-6">{project.name}</h3>
                 </Link>
               </motion.div>
 
@@ -55,7 +55,7 @@ const FinishedProjects = () => {
               <motion.p className="mt-6">{project.description}</motion.p>
 
               <motion.div
-                className="mt-10 mb-0 flex gap-5"
+                className="mt-10 mb-0 flex gap-5 flex-wrap justify-items-center"
                 variants={fadeIn("", "", 0.1, 1)}
               >
                 {project.tags.map((tech, techIndex) => (
