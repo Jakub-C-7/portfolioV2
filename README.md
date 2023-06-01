@@ -4,11 +4,11 @@ This is a a portfolio website written with cutting-edge technologies aimed to sh
 
 ## Technologies
 
-Nextjs
-React
-JavaScript
-Threejs
-Tailwindcss
-Framermotion
-HTML5
-CSS3
+- Nextjs
+- React
+- JavaScript
+- Threejs
+- Tailwindcss
+- Framermotion
+- HTML5
+- CSS3
