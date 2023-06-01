@@ -197,70 +197,99 @@ const testimonials = [
   },
 ];
 
-const projects = [
+const finishedProjects = [
   {
-    name: "Car Rent",
+    name: "UNIty Social Platform",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Platform aimed at improving the experience of an academic journey through provisioning ease in peer-to-peer interaction. The secure web-application utilises modern development tools such as Java (Spring Boot) for full-stack development.",
     tags: [
       {
-        name: "react",
+        name: "java",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "springBoot",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "mySQL",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: "vercel.svg",
+    source_code_link: "https://github.com/Jakub-C-7/UNItySocialPlatform",
   },
   {
-    name: "Job IT",
+    name: "Telemetry Web App",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Secure web-application for sending, receiving, viewing, and managing telemetry data. Users can register, log-in, and with the use of EE M2M, send, view, and download messages from the server.",
     tags: [
       {
-        name: "react",
+        name: "php",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "twig",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "restapi ",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: "vercel.svg",
+    source_code_link: "https://github.com/Jakub-C-7/Telemetry-Data-Processing",
   },
   {
-    name: "Trip Guide",
+    name: "This Website (Portfolio Version 2)",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A portfolio website written with cutting-edge technologies aimed to showcase the versatility of my abilities and capability of rapidly adapting to new concepts. This one was a load of fun!",
     tags: [
       {
         name: "nextjs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "threejs",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwindcss",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: "vercel.svg",
+    source_code_link: "https://github.com/Jakub-C-7/portfolioV2",
+  },
+  {
+    name: "Portfolio Version 1",
+    description:
+      "The first iteration of my portfolio website is a project which demonstrated my ability to deliver clean, robust, and reusable code. Written completely from scratch with just the use of vanilla JavaScript, HTML5, and CSS3 and demonstrating modern concepts in those languages respectively.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "threejs",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: "../projectImages/portfoliov1.gif",
+    source_code_link: "https://github.com/Jakub-C-7/portfolioV2",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, finishedProjects };

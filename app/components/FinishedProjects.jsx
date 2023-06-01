@@ -5,6 +5,10 @@ import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 import Image from "next/image";
 import ComponentLayout from "./layout";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
+import { finishedProjects } from "../constants";
+import Link from "next/link";
 
 const FinishedProjects = () => {
   return (
@@ -18,45 +22,95 @@ const FinishedProjects = () => {
           <h2 className={styles.sectionHeadText}>completed works</h2>
         </motion.div>
 
-        <motion.div
-          variants={textVariant()}
-          className="rounded-lg bg-[#211e35] p-6"
+        <Carousel
+          showArrows={true}
+          // onChange={onChange}
+          // onClickItem={onClickItem}
+          // onClickThumb={onClickThumb}
         >
-          <motion.div
-            className="flex flex-row-reverse text-tertiary"
-            variants={textVariant()}
-          >
-            <h3>project name</h3>
-          </motion.div>
+          {finishedProjects.map((project, index) => (
+            <motion.div
+              variants={textVariant()}
+              className="rounded-lg bg-[#211e35] p-6"
+              key={index}
+            >
+              <motion.div
+                className="flex flex-row-reverse text-tertiary"
+                variants={textVariant()}
+              >
+                <Link href={project.source_code_link}>
+                  <h3 className="hover:underline">{project.name}</h3>
+                </Link>
+              </motion.div>
 
-          <div className="flex mb-10 gap-10 sm:justify-start sm:flex-row flex-col select-none pointer-events-none">
-            <motion.div className="mx-auto" variants={textVariant()}>
-              <Image
-                className="sm:object-cover object-scale-down rounded-lg w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] "
-                width={300}
-                height={300}
-                src={"/vercel.svg"}
-                alt="project name"
+              <img
+                src={project.image}
+                // width="300"
+                // height="300"
+                loading="lazy"
+                alt={`${project.name} image`}
+                className="max-w-[400px] aspect-auto"
               />
-            </motion.div>
 
-            <div className="self-center w-4/5">
-              <motion.p variants={fadeIn("", "", 0.1, 1)}>
-                This is where i will talk about my project.This is where i will
-                talk about my projectThis is where i will talk about my
-                projectThis is where i will talk about my projectThis is where i
-                will talk about my project
-              </motion.p>
+              <motion.p className="mt-6">{project.description}</motion.p>
 
-              <motion.p
-                className="mt-10 mb-0"
+              <motion.div
+                className="mt-10 mb-0 flex gap-5"
                 variants={fadeIn("", "", 0.1, 1)}
               >
-                <span className="text-tertiary">#mongodb #java</span>
-              </motion.p>
+                {project.tags.map((tech, techIndex) => (
+                  <p key={`${index}-${techIndex}`} className={`${tech.color}`}>
+                    #{tech.name}
+                  </p>
+                ))}
+              </motion.div>
+            </motion.div>
+          ))}
+          {/* <motion.div
+            variants={textVariant()}
+            className="rounded-lg bg-[#211e35] p-6"
+          >
+            <motion.div
+              className="flex flex-row-reverse text-tertiary"
+              variants={textVariant()}
+            >
+              <h3>project name</h3>
+            </motion.div>
+
+            <img
+              className="sm:object-cover object-scale-down rounded-lg w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] "
+              src="vercel.svg"
+            />
+
+            <div className="flex mb-10 gap-10 sm:justify-start sm:flex-row flex-col select-none pointer-events-none">
+              <motion.div className="mx-auto" variants={textVariant()}>
+                <Image
+                  className="sm:object-cover object-scale-down rounded-lg w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] "
+                  width={300}
+                  height={300}
+                  src={"/vercel.svg"}
+                  alt="project name"
+                />
+              </motion.div>
+
+              <div className="self-center w-4/5">
+                <motion.p variants={fadeIn("", "", 0.1, 1)}>
+                  This is where i will talk about my project.This is where i
+                  will talk about my projectThis is where i will talk about my
+                  projectThis is where i will talk about my projectThis is where
+                  i will talk about my project
+                </motion.p>
+
+                <motion.p
+                  className="mt-10 mb-0"
+                  variants={fadeIn("", "", 0.1, 1)}
+                >
+                  <span className="text-tertiary">#mongodb #java</span>
+                </motion.p>
+              </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div> */}
+        </Carousel>
       </>
     </ComponentLayout>
   );
