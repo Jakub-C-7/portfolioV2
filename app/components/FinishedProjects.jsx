@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { fadeIn, textVariant, textVariants } from "../utils/motion";
+import { fadeIn, textVariant } from "../utils/motion";
 import Image from "next/image";
 import ComponentLayout from "./layout";
 
@@ -18,7 +18,10 @@ const FinishedProjects = () => {
           <h2 className={styles.sectionHeadText}>completed works</h2>
         </motion.div>
 
-        <div className="rounded-lg bg-[#211e35] p-6">
+        <motion.div
+          variants={textVariant()}
+          className="rounded-lg bg-[#211e35] p-6"
+        >
           <motion.div
             className="flex flex-row-reverse text-tertiary"
             variants={textVariant()}
@@ -29,7 +32,7 @@ const FinishedProjects = () => {
           <div className="flex mb-10 gap-10 sm:justify-start sm:flex-row flex-col select-none pointer-events-none">
             <motion.div className="mx-auto" variants={textVariant()}>
               <Image
-                className="sm:object-cover object-scale-down rounded-lg w-[150px] h-[150px] sm:w-[250px] sm:h-[250px] "
+                className="sm:object-cover object-scale-down rounded-lg w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] "
                 width={300}
                 height={300}
                 src={"/vercel.svg"}
@@ -37,7 +40,7 @@ const FinishedProjects = () => {
               />
             </motion.div>
 
-            <div className="self-center">
+            <div className="self-center w-4/5">
               <motion.p variants={fadeIn("", "", 0.1, 1)}>
                 This is where i will talk about my project.This is where i will
                 talk about my projectThis is where i will talk about my
@@ -53,7 +56,7 @@ const FinishedProjects = () => {
               </motion.p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </>
     </ComponentLayout>
   );
