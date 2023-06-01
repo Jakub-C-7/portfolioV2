@@ -237,7 +237,7 @@ const finishedProjects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "vercel.svg",
+    image: "../projectImages/telemetry.jpeg",
     source_code_link: "https://github.com/Jakub-C-7/Telemetry-Data-Processing",
   },
   {
