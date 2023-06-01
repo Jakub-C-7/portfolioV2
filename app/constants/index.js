@@ -262,7 +262,7 @@ const finishedProjects = [
         color: "blue-text-gradient",
       },
     ],
-    image: "vercel.svg",
+    image: "../projectImages/portfoliov2.jpg",
     source_code_link: "https://github.com/Jakub-C-7/portfolioV2",
   },
   {
