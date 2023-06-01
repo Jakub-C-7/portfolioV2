@@ -15,7 +15,7 @@ const FinishedProjects = () => {
     <ComponentLayout>
       <>
         <motion.div
-          className="sm:mt-20 mt-10 mb-10 flex xs:flex-row-reverse self-center"
+          className="sm:mt-20 mt-10 mb-10 flex xs:flex-row-reverse self-center h-3/4"
           variants={textVariant()}
           id="finishedprojects"
         >
@@ -49,7 +49,7 @@ const FinishedProjects = () => {
                 // height="300"
                 loading="lazy"
                 alt={`${project.name} image`}
-                className="max-w-[400px] aspect-auto"
+                className="max-h-[300px] sm:max-w-[500px] max-w-[300px] aspect-auto"
               />
 
               <motion.p className="mt-6">{project.description}</motion.p>

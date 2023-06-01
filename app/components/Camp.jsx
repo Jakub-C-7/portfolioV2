@@ -7,13 +7,31 @@ Source: https://sketchfab.com/3d-models/camping-buscraft-ambience-7b65e4df95c349
 Title: camping buscraft ambience
 */
 
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
+// import { useFrame } from "@react-three/fiber";
+// import * as THREE from "three";
+// import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 export function Camp(isMobile) {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF("/camp-transformed.glb");
-  const { actions } = useAnimations(animations, group);
+  const { nodes, materials, animations, scene } = useGLTF(
+    "/camp-transformed.glb"
+  );
+  const { actions, names } = useAnimations(animations);
+
+  // useEffect(() => {
+  //   const mixer = new THREE.AnimationMixer(scene);
+  //   const action = mixer.clipAction(animations[0]);
+  //   console.log(scene);
+  //   // console.log(group);
+  //   action.play();
+  // });
+
+  // console.log(scene);
+  // console.log(animations[0]);
+  // console.log(actions);
+
   return (
     <group
       scale={isMobile.isMobile ? 0.6 : 0.8}
