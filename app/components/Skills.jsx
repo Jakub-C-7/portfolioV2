@@ -20,7 +20,7 @@ const Skills = () => {
         {technologies.map((technology) => (
           <div className="w-1/4 h-1/4" key={technology.name}>
             <FloppyCanvas icon={technology.icon} />
-            {technology.name}
+            {/* {technology.name} */}
           </div>
         ))}
       </div>

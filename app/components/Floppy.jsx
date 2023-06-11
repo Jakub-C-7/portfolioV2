@@ -27,7 +27,7 @@ export function Floppy(imgUrl, isMobile) {
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
       <group dispose={null}>
-        <group scale={1.2}>
+        <group scale={1.2} position={[0, -1.5, 0]}>
           <group rotation={[-Math.PI / 2, 0, 0]} scale={1}>
             <mesh
               geometry={nodes["Cube048_������������_��������������_0"].geometry}

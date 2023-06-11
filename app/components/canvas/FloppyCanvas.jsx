@@ -43,7 +43,7 @@ const FloppyCanvas = ({ icon }) => {
       frameloop="demand"
       shadows
       camera={{
-        position: [0.2, 2.5, 5],
+        position: [0, -0.5, 4],
         fov: 50,
         rotation: [0, 0, 0],
         near: 0.1,
@@ -53,7 +53,7 @@ const FloppyCanvas = ({ icon }) => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
-          maxPolarAngle={Math.PI / 2 - 0.3} // Stop users scrolling below the camp
+          // maxPolarAngle={Math.PI / 2 - 0.3} // Stop users scrolling below
           // minAzimuthAngle={0.5}
           // minPolarAngle={Math.PI / 2 - 0.4}
         />
