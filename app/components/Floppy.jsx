@@ -7,23 +7,56 @@ Source: https://sketchfab.com/3d-models/floppy-3b492d37ca4d43a8817087cb7861950f
 Title: Floppy
 */
 
-import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
+import React, { useRef } from "react";
+import { useGLTF } from "@react-three/drei";
+import {
+  OrbitControls,
+  Preload,
+  Decal,
+  Float,
+  useTexture,
+} from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/floppy-transformed.glb')
+export function Floppy(imgUrl, isMobile) {
+  const { nodes, materials } = useGLTF("/floppy-transformed.glb");
+  // const [decal] = useTexture(["tech/css.png"]);
+  const [decal] = useTexture([imgUrl.imgUrl]);
+
+  // console.log(imgUrl);
+
   return (
-    <group {...props} dispose={null}>
-      <group scale={0.01}>
-        <group rotation={[-Math.PI / 2, 0, 0]} scale={100}>
-          <mesh geometry={nodes['Cube048_������������_��������������_0'].geometry} material={materials.material} />
-          <mesh geometry={nodes.Cube048_Material008_0.geometry} material={materials['Material.008']} />
-          <mesh geometry={nodes.Cube048_Material009_0.geometry} material={materials.material} />
-          <mesh geometry={nodes.Cube048_Material007_0.geometry} material={materials['Material.007']} />
+    <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
+      <group dispose={null}>
+        <group scale={1.2}>
+          <group rotation={[-Math.PI / 2, 0, 0]} scale={1}>
+            <mesh
+              geometry={nodes["Cube048_������������_��������������_0"].geometry}
+              material={materials.material}
+            />
+            <mesh
+              geometry={nodes.Cube048_Material008_0.geometry}
+              material={materials["Material.008"]}
+            />
+            <mesh
+              geometry={nodes.Cube048_Material009_0.geometry}
+              material={materials.material}
+            />
+            <mesh
+              geometry={nodes.Cube048_Material007_0.geometry}
+              material={materials["Material.007"]}
+            >
+              <Decal
+                scale={1}
+                position={[0, 0, 0.6]}
+                rotation={[Math.PI / 2, 0, 0]}
+                map={decal}
+              />
+            </mesh>
+          </group>
         </group>
       </group>
-    </group>
-  )
+    </Float>
+  );
 }
 
-useGLTF.preload('/floppy-transformed.glb')
+useGLTF.preload("/floppy-transformed.glb");
