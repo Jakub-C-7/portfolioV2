@@ -6,7 +6,6 @@ import { technologies } from "../constants";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { textVariant } from "../utils/motion";
-// import Image from "next/image";
 
 const Skills = () => {
   return (
@@ -16,9 +15,9 @@ const Skills = () => {
         <h2 className={styles.sectionHeadText}>Technologies</h2>
       </motion.div>
 
-      <div className="flex flex-row flex-wrap justify-center gap-10">
+      <div className="flex flex-row flex-wrap justify-center gap-10 sm:mt-8">
         {technologies.map((technology) => (
-          <div className="w-1/4 h-1/4" key={technology.name}>
+          <div className="sm:w-1/4 sm:h-1/4 w-1/3 h-1/3" key={technology.name}>
             <FloppyCanvas icon={technology.icon} />
             {/* {technology.name} */}
           </div>

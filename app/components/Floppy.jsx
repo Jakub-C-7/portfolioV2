@@ -9,25 +9,16 @@ Title: Floppy
 
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
-import {
-  OrbitControls,
-  Preload,
-  Decal,
-  Float,
-  useTexture,
-} from "@react-three/drei";
+import { Decal, Float, useTexture } from "@react-three/drei";
 
-export function Floppy(imgUrl, isMobile) {
+export function Floppy(props) {
   const { nodes, materials } = useGLTF("/floppy-transformed.glb");
-  // const [decal] = useTexture(["tech/css.png"]);
-  const [decal] = useTexture([imgUrl.imgUrl]);
-
-  // console.log(imgUrl);
+  const [decal] = useTexture([props.imgUrl]);
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
       <group dispose={null}>
-        <group scale={1.2} position={[0, -1.5, 0]}>
+        <group scale={props.isMobile ? 0.9 : 1.2} position={[0, -1.5, 0]}>
           <group rotation={[-Math.PI / 2, 0, 0]} scale={1}>
             <mesh
               geometry={nodes["Cube048_������������_��������������_0"].geometry}
