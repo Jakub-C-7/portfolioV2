@@ -6,7 +6,8 @@ import WorkshopGreeting from "./WorkshopGreeting";
 import FinishedProjects from "./FinishedProjects";
 import InProgressProjects from "./InProgressProjects";
 import SkillsCertsGreeting from "./SkillsCertsGreeting";
-import SkillsCerts from "./SkillsCerts";
+import Skills from "./Skills";
+import Certs from "./Certs";
 import Contact from "./Contact";
 
 export {
@@ -18,6 +19,7 @@ export {
   FinishedProjects,
   InProgressProjects,
   SkillsCertsGreeting,
-  SkillsCerts,
+  Skills,
+  Certs,
   Contact,
 };

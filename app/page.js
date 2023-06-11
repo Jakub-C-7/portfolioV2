@@ -5,7 +5,8 @@ import {
   FinishedProjects,
   InProgressProjects,
   SkillsCertsGreeting,
-  SkillsCerts,
+  Skills,
+  Certs,
   Contact,
 } from "./components";
 import About from "./components/About";
@@ -26,7 +27,8 @@ export default function Home() {
         <InProgressProjects />
 
         <SkillsCertsGreeting />
-        <SkillsCerts />
+        <Skills />
+        <Certs />
         <Contact />
 
         <div className="relative z-0">{/* <Contact /> */}</div>
