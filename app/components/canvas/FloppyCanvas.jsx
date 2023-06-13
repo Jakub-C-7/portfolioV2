@@ -40,7 +40,7 @@ const FloppyCanvas = ({ icon }) => {
   return (
     <Canvas
       className="cursor-pointer"
-      frameloop="demand"
+      frameloop="always" //Always animates all floppy disks
       shadows
       camera={{
         position: [0, -0.5, 4],
@@ -59,7 +59,9 @@ const FloppyCanvas = ({ icon }) => {
         />
         <ambientLight intensity={0.25} />
         <directionalLight position={[0, 0, 0.05]} />
-        <Floppy imgUrl={icon} isMobile={isMobile} />
+        <Float speed={2} rotationIntensity={1} floatIntensity={2}>
+          <Floppy imgUrl={icon} isMobile={isMobile} />
+        </Float>
       </Suspense>
 
       <Preload all />

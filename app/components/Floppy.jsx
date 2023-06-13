@@ -14,39 +14,38 @@ import { Decal, Float, useTexture } from "@react-three/drei";
 export function Floppy(props) {
   const { nodes, materials } = useGLTF("/floppy-transformed.glb");
   const [decal] = useTexture([props.imgUrl]);
+  const group = useRef();
 
   return (
-    <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
-      <group dispose={null}>
-        <group scale={props.isMobile ? 0.9 : 1.2} position={[0, -1.5, 0]}>
-          <group rotation={[-Math.PI / 2, 0, 0]} scale={1}>
-            <mesh
-              geometry={nodes["Cube048_������������_��������������_0"].geometry}
-              material={materials.material}
+    <group ref={group} dispose={null}>
+      <group scale={props.isMobile ? 0.9 : 1.2} position={[0, -1.5, 0]}>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1}>
+          <mesh
+            geometry={nodes["Cube048_������������_��������������_0"].geometry}
+            material={materials.material}
+          />
+          <mesh
+            geometry={nodes.Cube048_Material008_0.geometry}
+            material={materials["Material.008"]}
+          />
+          <mesh
+            geometry={nodes.Cube048_Material009_0.geometry}
+            material={materials.material}
+          />
+          <mesh
+            geometry={nodes.Cube048_Material007_0.geometry}
+            material={materials["Material.007"]}
+          >
+            <Decal
+              scale={1}
+              position={[0, 0, 0.6]}
+              rotation={[Math.PI / 2, 0, 0]}
+              map={decal}
             />
-            <mesh
-              geometry={nodes.Cube048_Material008_0.geometry}
-              material={materials["Material.008"]}
-            />
-            <mesh
-              geometry={nodes.Cube048_Material009_0.geometry}
-              material={materials.material}
-            />
-            <mesh
-              geometry={nodes.Cube048_Material007_0.geometry}
-              material={materials["Material.007"]}
-            >
-              <Decal
-                scale={1}
-                position={[0, 0, 0.6]}
-                rotation={[Math.PI / 2, 0, 0]}
-                map={decal}
-              />
-            </mesh>
-          </group>
+          </mesh>
         </group>
       </group>
-    </Float>
+    </group>
   );
 }
 
