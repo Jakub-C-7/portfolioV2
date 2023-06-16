@@ -11,8 +11,10 @@ const Skills = () => {
   return (
     <ComponentLayout>
       <motion.div variants={textVariant()} id="tech">
-        <p className={styles.sectionSubText}>Current tools in the workshop</p>
-        <h2 className={styles.sectionHeadText}>Technologies</h2>
+        <p className={styles.sectionSubText}>
+          explore the tools in the workshop
+        </p>
+        <h2 className={styles.sectionHeadText}>technologies</h2>
       </motion.div>
 
       <div className="flex flex-row flex-wrap justify-center gap-10 sm:mt-8">

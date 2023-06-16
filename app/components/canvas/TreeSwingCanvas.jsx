@@ -33,7 +33,7 @@ const TreeSwingCanvas = () => {
   return (
     <Canvas
       className="cursor-pointer sm:pl-16 sm:pt-0 pt-6"
-      frameloop="demand"
+      frameloop="always"
       shadows
       camera={{
         position: [-51, 124, 273],
@@ -46,6 +46,8 @@ const TreeSwingCanvas = () => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
+          autoRotate={true}
+          autoRotateSpeed={0.3}
           maxPolarAngle={Math.PI / 2} // Stop users scrolling below
         />
 
