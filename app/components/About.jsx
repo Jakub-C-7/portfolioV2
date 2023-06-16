@@ -75,7 +75,7 @@ const About = () => {
         </div>
 
         <motion.p
-          className="mt-20 mb-0  select-none pointer-events-none"
+          className="mt-4 mb-0  select-none pointer-events-none"
           variants={fadeIn("", "", 0.1, 1)}
         >
           come on down, <span className="text-tertiary">find out more </span>{" "}
