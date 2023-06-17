@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Welcome from "./components/Welcome";
 import {
   WorkshopGreeting,
@@ -16,13 +15,12 @@ export default function Home() {
     <main>
       <div className="relative z-0 bg-background-primary">
         <div className="bg-cover bg-no-repeat bg-center">
-          {/* <Navbar /> */}
           <Welcome />
         </div>
-
         <About />
 
         <WorkshopGreeting />
+
         <FinishedProjects />
         <InProgressProjects />
 
@@ -30,8 +28,6 @@ export default function Home() {
         <Skills />
         <Certs />
         <Contact />
-
-        <div className="relative z-0">{/* <Contact /> */}</div>
       </div>
     </main>
   );
