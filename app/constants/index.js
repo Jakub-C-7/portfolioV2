@@ -115,61 +115,6 @@ const technologies = [
   },
 ];
 
-const experiences = [
-  {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-];
-
 const testimonials = [
   {
     testimonial:
@@ -199,13 +144,34 @@ const testimonials = [
 
 const finishedProjects = [
   {
+    name: "Power of AI",
+    description:
+      "An AI powered program which takes an image as input, analyses the image, and returns output information in several categories. The program is able to generate a description of the image, scan for, recognise, and tag objects, analyse colour, scan for and recognise faces, the age, and gender of the face, recognise celebrities, landmarks, and brands. The program can also use AI to moderate content for three categories: Adult, Gory, and Racy.",
+    tags: [
+      {
+        name: "c#",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "azure",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ai",
+        color: "green-text-gradient",
+      },
+    ],
+    image: "../projectImages/power_of_ai.jpg",
+    source_code_link: "https://github.com/Jakub-C-7/PowerOfAI",
+  },
+  {
     name: "UNIty Social Platform",
     description:
       "Platform aimed at improving the experience of an academic journey through provisioning ease in peer-to-peer interaction. The secure web-application utilises modern development tools such as Java (Spring Boot) for full-stack development.",
     tags: [
       {
         name: "java",
-        color: "blue-text-gradient",
+        color: "orange-text-gradient",
       },
       {
         name: "springBoot",
@@ -213,7 +179,15 @@ const finishedProjects = [
       },
       {
         name: "mySQL",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "html",
         color: "pink-text-gradient",
+      },
+      {
+        name: "css",
+        color: "blue-text-gradient",
       },
     ],
     image: "../projectImages/unity.jpg",
@@ -234,10 +208,14 @@ const finishedProjects = [
       },
       {
         name: "restapi ",
-        color: "pink-text-gradient",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "devsecops ",
+        color: "blue-text-gradient",
       },
     ],
-    image: "../projectImages/telemetry.jpeg",
+    image: "../projectImages/telemetry.jpg",
     source_code_link: "https://github.com/Jakub-C-7/Telemetry-Data-Processing",
   },
   {
@@ -261,6 +239,18 @@ const finishedProjects = [
         name: "tailwindcss",
         color: "blue-text-gradient",
       },
+      {
+        name: "javascript",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "html",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "css",
+        color: "blue-text-gradient",
+      },
     ],
     image: "../projectImages/portfoliov2.jpg",
     source_code_link: "https://github.com/Jakub-C-7/portfolioV2",
@@ -271,20 +261,16 @@ const finishedProjects = [
       "The first iteration of my portfolio website is a project which demonstrated my ability to deliver clean, robust, and reusable code. Written completely from scratch with just the use of vanilla JavaScript, HTML5, and CSS3 and demonstrating modern concepts in those languages respectively.",
     tags: [
       {
-        name: "nextjs",
+        name: "javascript",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "html",
         color: "pink-text-gradient",
       },
       {
-        name: "react",
+        name: "css",
         color: "blue-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "green-text-gradient",
-      },
-      {
-        name: "threejs",
-        color: "pink-text-gradient",
       },
     ],
     image: "../projectImages/portfoliov1.gif",
@@ -292,4 +278,4 @@ const finishedProjects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, finishedProjects };
+export { services, technologies, testimonials, finishedProjects };
