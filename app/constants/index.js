@@ -149,7 +149,7 @@ const finishedProjects = [
       "An AI powered program which takes an image as input, analyses the image, and returns output information in several categories. The program is able to generate a description of the image, scan for, recognise, and tag objects, analyse colour, scan for and recognise faces, the age, and gender of the face, recognise celebrities, landmarks, and brands. The program can also use AI to moderate content for three categories: Adult, Gory, and Racy.",
     tags: [
       {
-        name: "c#",
+        name: "csharp",
         color: "pink-text-gradient",
       },
       {
