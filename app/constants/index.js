@@ -1,30 +1,4 @@
-import {
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
-  blackhole,
-  coding,
-  computer,
-  idea,
-  network,
-} from "../assets";
+import { coding, computer, idea, network } from "../assets";
 
 export const navLinks = [
   {
@@ -62,40 +36,36 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: "tech/html.png",
+    name: "Java",
+    icon: "tech/java.png",
   },
   {
-    name: "CSS 3",
-    icon: "tech/css.png",
+    name: "C#",
+    icon: "tech/c-sharp.png",
+  },
+  {
+    name: "Python",
+    icon: "tech/python.png",
+  },
+  {
+    name: "Scala",
+    icon: "tech/scala.png",
+  },
+  {
+    name: "MongoDB",
+    icon: "tech/mongodb.png",
   },
   {
     name: "JavaScript",
     icon: "tech/javascript.png",
   },
   {
-    name: "TypeScript",
-    icon: "tech/typescript.png",
-  },
-  {
     name: "React JS",
     icon: "tech/reactjs.png",
   },
   {
-    name: "Redux Toolkit",
-    icon: "tech/redux.png",
-  },
-  {
     name: "Tailwind CSS",
     icon: "tech/tailwind.png",
-  },
-  {
-    name: "Node JS",
-    icon: "tech/nodejs.png",
-  },
-  {
-    name: "MongoDB",
-    icon: "tech/mongodb.png",
   },
   {
     name: "Three JS",
@@ -104,10 +74,6 @@ const technologies = [
   {
     name: "git",
     icon: "tech/git.png",
-  },
-  {
-    name: "figma",
-    icon: "tech/figma.png",
   },
   {
     name: "docker",
