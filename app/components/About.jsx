@@ -2,6 +2,7 @@
 
 import React from "react";
 import Tilt from "react-parallax-tilt";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constants";
@@ -35,7 +36,8 @@ const About = () => {
     <ComponentLayout>
       <>
         <motion.div
-          className="sm:mt-20 mt-10 mb-10 flex xs:flex-row flex-row"
+          // className="sm:mt-20 mt-10 mb-10 flex xs:flex-row flex-row mx-auto"
+          className={`${styles.paddingX} max-w-7xl mx-auto flex flex-row items-end gap-5`}
           variants={textVariant()}
           id="about"
         >
@@ -44,9 +46,8 @@ const About = () => {
             <h2 className={styles.sectionHeadText}>Overview</h2>
           </div>
         </motion.div>
-
         <div className="flex mb-10 gap-10 sm:justify-start sm:flex-row flex-col select-none pointer-events-none">
-          <motion.div className="mx-auto" variants={textVariant()}>
+          <motion.div className="mx-auto 2xl:mr-0" variants={textVariant()}>
             <Image
               className="sm:object-cover object-scale-down rounded-lg w-[150px] h-[150px] sm:w-[250px] sm:h-[250px] "
               width={300}
@@ -73,15 +74,16 @@ const About = () => {
             </motion.p>
           </div>
         </div>
-
-        <motion.p
-          className="mt-4 mb-0  select-none pointer-events-none"
-          variants={fadeIn("", "", 0.1, 1)}
-        >
-          come on down, <span className="text-tertiary">find out more </span>{" "}
-          about me!
-        </motion.p>
-
+        <a href="#workshop">
+          <motion.p
+            // className="mt-4 mb-0 select-none pointer-events-none"
+            className={`${styles.paddingX} max-w-7xl mx-auto text-center select-none hover:underline`}
+            variants={fadeIn("", "", 0.1, 1)}
+          >
+            come on down, <span className="text-tertiary">find out more</span>{" "}
+            about me!
+          </motion.p>
+        </a>{" "}
         <div className="mt-10 flex flex-wrap gap-10 justify-center">
           {services.map((service, index) => (
             <ServiceCard key={service.title} index={index} {...service} />
