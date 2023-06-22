@@ -2,7 +2,7 @@
 
 import { Suspense, useEffect, useState } from "react";
 import { Canvas, useLoader } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { OrbitControls, Preload, useGLTF, Float } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 import { Workbench } from "../Workbench";
 
@@ -33,10 +33,10 @@ const WorkbenchCanvas = () => {
   return (
     <Canvas
       className="cursor-pointer sm:pl-72"
-      frameloop="demand"
+      frameloop="always"
       shadows
       camera={{
-        position: [15.92, 6.04, -0.97],
+        position: [15.92, 6.04, 5],
         fov: 50,
         rotation: [-94.16, 69.2, 94.45],
         near: 0.1,
@@ -46,10 +46,12 @@ const WorkbenchCanvas = () => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
+          enablePan={false}
           maxPolarAngle={Math.PI / 2 - 0.3} // Stop users scrolling below
         />
-
-        <Workbench isMobile={isMobile} />
+        <Float speed={1} rotationIntensity={0.5} floatIntensity={1}>
+          <Workbench isMobile={isMobile} />
+        </Float>
       </Suspense>
 
       <Preload all />

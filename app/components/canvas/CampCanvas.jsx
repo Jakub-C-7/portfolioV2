@@ -46,6 +46,7 @@ const CampCanvas = () => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
+          enablePan={false}
           autoRotate={true}
           autoRotateSpeed={0.2}
           maxPolarAngle={Math.PI / 2 - 0.3} // Stop users scrolling below the camp

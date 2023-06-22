@@ -53,6 +53,7 @@ const FloppyCanvas = ({ icon }) => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
+          enablePan={false}
           // maxPolarAngle={Math.PI / 2 - 0.3} // Stop users scrolling below
           // minAzimuthAngle={0.5}
           // minPolarAngle={Math.PI / 2 - 0.4}

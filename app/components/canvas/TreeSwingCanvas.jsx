@@ -46,6 +46,7 @@ const TreeSwingCanvas = () => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
+          enablePan={false}
           autoRotate={true}
           autoRotateSpeed={0.3}
           maxPolarAngle={Math.PI / 2} // Stop users scrolling below
