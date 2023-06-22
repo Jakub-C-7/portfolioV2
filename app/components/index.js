@@ -1,4 +1,4 @@
-import { CampCanvas } from "./canvas/CampCanvas";
+import CampCanvas from "./canvas/CampCanvas";
 import Welcome from "./Welcome";
 import Navbar from "./Navbar";
 import About from "./About";
