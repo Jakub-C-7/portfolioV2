@@ -11,13 +11,12 @@ import Image from "next/image";
 import ComponentLayout from "./layout";
 
 const CertCard = ({ index, title, icon }) => {
-  console.log(icon);
-
   return (
     <Tilt className="sm:w-[175px] w-full cursor-pointer">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         // className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        // className="w-full shadow-card"
       >
         <div
           options={{ max: 45, scale: 1, speed: 450 }}

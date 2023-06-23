@@ -74,11 +74,14 @@ const About = () => {
             </motion.p>
           </div>
         </div>
-        <div className="mt-10 flex flex-wrap gap-10 justify-center">
+        <motion.div
+          className="mt-10 flex flex-wrap gap-10 justify-center"
+          variants={fadeIn("", "", 0.1, 1)}
+        >
           {services.map((service, index) => (
             <ServiceCard key={service.title} index={index} {...service} />
           ))}
-        </div>
+        </motion.div>
         <a href="#workshop">
           <motion.p
             // className="mt-4 mb-0 select-none pointer-events-none"
