@@ -57,7 +57,7 @@ const About = () => {
             />
           </motion.div>
 
-          <div className="self-center">
+          <div className="self-center mx-auto ml-0">
             <motion.p variants={fadeIn("", "", 0.1, 1)}>
               I'm a <span className="text-primary">Software Engineer</span> with
               over{" "}
@@ -74,21 +74,21 @@ const About = () => {
             </motion.p>
           </div>
         </div>
+        <div className="mt-10 flex flex-wrap gap-10 justify-center">
+          {services.map((service, index) => (
+            <ServiceCard key={service.title} index={index} {...service} />
+          ))}
+        </div>
         <a href="#workshop">
           <motion.p
             // className="mt-4 mb-0 select-none pointer-events-none"
-            className={`${styles.paddingX} max-w-7xl mx-auto text-center select-none hover:underline`}
+            className={`${styles.paddingX} max-w-7xl mx-auto text-center select-none hover:underline mt-8`}
             variants={fadeIn("", "", 0.1, 1)}
           >
             come on down, <span className="text-tertiary">find out more</span>{" "}
             about me!
           </motion.p>
         </a>{" "}
-        <div className="mt-10 flex flex-wrap gap-10 justify-center">
-          {services.map((service, index) => (
-            <ServiceCard key={service.title} index={index} {...service} />
-          ))}
-        </div>
       </>
     </ComponentLayout>
   );
