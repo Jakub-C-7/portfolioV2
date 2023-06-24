@@ -12,7 +12,15 @@ import ComponentLayout from "./layout";
 
 const CertCard = ({ index, title, icon }) => {
   return (
-    <Tilt className="sm:w-[175px] w-full cursor-pointer">
+    <Tilt
+      className="w-[175px] cursor-pointer"
+      tiltMaxAngleX={40}
+      tiltMaxAngleY={40}
+      perspective={1000}
+      transitionSpeed={1000}
+      scale={1.2}
+      gyroscope={true}
+    >
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         // className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
@@ -47,9 +55,9 @@ const Certs = () => {
         </p>
         <h2 className={styles.sectionHeadText}>certifications</h2>
       </motion.div>
-      <motion.div className="mt-10 flex flex-wrap gap-10 justify-center">
+      <motion.div className="mt-10 flex flex-wrap gap-10 justify-center w-3/4 mx-auto">
         {certifications.map((cert, index) => (
-          <Link href={cert.link} target="_blank">
+          <Link key={cert.title + "_link"} href={cert.link} target="_blank">
             <CertCard key={cert.title} index={index} {...cert} />
           </Link>
         ))}

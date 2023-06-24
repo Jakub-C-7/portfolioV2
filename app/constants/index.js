@@ -103,12 +103,12 @@ const certifications = [
     link: "https://www.credly.com/badges/c94e3785-a0c4-4ffd-b6f8-136ecc614379/public_url",
   },
   {
-    title: "Azure Security, Compliance & Identity Fundamentals (SC-900)",
+    title: "Azure Security Fundamentals (SC-900)",
     icon: "/certificationImages/sc_900.png",
     link: "https://www.credly.com/badges/48f3503b-3625-4b7d-9466-49ecd8f65afd/public_url",
   },
   {
-    title: "AWS Certified Cloud Practitioner",
+    title: "AWS Cloud Practitioner",
     icon: "/certificationImages/aws_ccp.png",
     link: "https://www.credly.com/badges/18577e90-0fc4-438d-9e73-8e0d50928c9f/public_url",
   },
