@@ -35,7 +35,7 @@ const CertCard = ({ index, title, icon }) => {
             height={200}
             src={icon}
             alt={title}
-            className="w-16 h-16 object-contain"
+            className="w-16 h-16 md:h-20 md:w-20 lg:h-24 lg:w-24 object-contain"
           />
           <h3 className="text-primary text-[20px] font-bold text-center">
             {title}
