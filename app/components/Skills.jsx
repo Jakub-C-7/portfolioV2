@@ -10,9 +10,15 @@ import { textVariant } from "../utils/motion";
 const Skills = () => {
   return (
     <ComponentLayout>
-      <motion.div variants={textVariant()} id="tech">
-        <p className={styles.sectionSubText}>recent tools in the workshop</p>
-        <h2 className={styles.sectionHeadText}>technologies</h2>
+      <motion.div
+        className={`${styles.paddingX} max-w-7xl mx-auto flex items-end gap-5 ml-0`}
+        variants={textVariant()}
+        id="tech"
+      >
+        <div className="self-center">
+          <p className={styles.sectionSubText}>recent tools in the workshop</p>
+          <h2 className={styles.sectionHeadText}>technologies</h2>
+        </div>
       </motion.div>
 
       <div className="flex flex-wrap justify-center gap-10 mt-8 w-3/4 mx-auto">

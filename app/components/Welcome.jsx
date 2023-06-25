@@ -20,7 +20,7 @@ const Welcome = () => {
             hi, I'm <span className="text-[#FF3562]">Jakub</span>
           </h1>
           <p className={`${styles.subTextAlt2} pl-10`}>
-            welcome to my base-camp
+            take a seat and get to know me
           </p>
         </div>
       </div>

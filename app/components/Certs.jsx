@@ -49,11 +49,17 @@ const CertCard = ({ index, title, icon }) => {
 const Certs = () => {
   return (
     <ComponentLayout>
-      <motion.div variants={textVariant()} id="tech">
-        <p className={styles.sectionSubText}>
-          a little more credibility enforcement
-        </p>
-        <h2 className={styles.sectionHeadText}>certifications</h2>
+      <motion.div
+        className={`${styles.paddingX} max-w-7xl mx-auto flex flex-row-reverse items-end gap-5`}
+        variants={textVariant()}
+        id="certs"
+      >
+        <div className="self-center">
+          <p className={styles.sectionSubText}>
+            a little more credibility enforcement
+          </p>
+          <h2 className={styles.sectionHeadText}>certifications</h2>
+        </div>
       </motion.div>
       <motion.div className="mt-10 flex flex-wrap gap-10 justify-center w-3/4 mx-auto">
         {certifications.map((cert, index) => (
