@@ -15,7 +15,9 @@ const FinishedProjects = () => {
     <ComponentLayout>
       <>
         <motion.div
-          className="sm:mt-20 mt-10 mb-10 flex xs:flex-row-reverse self-center h-3/4"
+          // className="sm:mt-20 mt-10 mb-10 flex xs:flex-row-reverse self-center h-3/4"
+          // variants={textVariant()}
+          className={`${styles.paddingX} max-w-7xl mx-auto flex flex-row xs:flex-row-reverse items-end gap-5 mr-0`}
           variants={textVariant()}
           id="finishedprojects"
         >
@@ -24,6 +26,7 @@ const FinishedProjects = () => {
 
         <Carousel
           showArrows={true}
+          className="xl:w-1/2 w-full mx-auto"
           // onChange={onChange}
           // onClickItem={onClickItem}
           // onClickThumb={onClickThumb}
@@ -31,7 +34,7 @@ const FinishedProjects = () => {
           {finishedProjects.map((project, index) => (
             <motion.div
               variants={textVariant()}
-              className="rounded-lg bg-[#211e35] p-6 w-full h-full"
+              className="rounded-lg bg-[#211e35] p-6 w-full h-full mx-auto"
               key={index}
             >
               <motion.div
