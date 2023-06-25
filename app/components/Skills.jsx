@@ -22,7 +22,7 @@ const Skills = () => {
             key={technology.name}
           >
             <FloppyCanvas icon={technology.icon} />
-            <motion.div className="absolute select-none active:pointer-events-none text-tertiary top-0 left-0 w-full h-1/2 text-center opacity-0 transition duration-700 hover:opacity-100 hover:scale-110">
+            <motion.div className="absolute select-none active:pointer-events-none text-tertiary top-0 left-0 w-full h-2/3 text-center opacity-0 transition duration-700 hover:opacity-100 hover:scale-110">
               {technology.name}
             </motion.div>
           </div>
