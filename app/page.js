@@ -9,6 +9,7 @@ import {
   Contact,
 } from "./components";
 import About from "./components/About";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <Skills />
         <Certs />
         <Contact />
+        <Footer />
       </div>
     </main>
   );
