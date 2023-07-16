@@ -28,14 +28,14 @@ const Footer = () => {
         </div>
 
         <div className="flex">
-          <a href="https://www.linkedin.com" className="flex">
-            <Image width={100} height={100} src="next.svg" />
+          <a href="ADD EMAIL LINK HERE" className="flex">
+            <Image width={100} height={100} src="/socialsIcons/mail.png" />
           </a>
-          <a href="https://www.linkedin.com" className="flex">
-            <Image width={100} height={100} src="next.svg" />
+          <a href="https://www.linkedin.com/in/jakubchamera/" className="flex">
+            <Image width={100} height={100} src="/socialsIcons/linkedin.png" />
           </a>
-          <a href="https://www.linkedin.com" className="flex">
-            <Image width={100} height={100} src="next.svg" />
+          <a href="https://github.com/Jakub-C-7" className="flex">
+            <Image width={100} height={100} src="/socialsIcons/github.png" />
           </a>
         </div>
       </div>
