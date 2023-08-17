@@ -83,27 +83,32 @@ const technologies = [
 
 const certifications = [
   {
-    title: "Azure Virtual Desktop Specialty (AZ-140)",
+    title: "Azure Virtual Desktop Specialty",
     icon: "/certificationImages/az_140.png",
     link: "https://www.credly.com/badges/5e4876e4-1eb3-4022-8b50-59677c77ffef/public_url",
   },
   {
-    title: "Azure Fundamentals (AZ-900)",
+    title: "Azure AI Engineer Associate",
+    icon: "/certificationImages/ai_102.svg",
+    link: "https://learn.microsoft.com/en-us/users/jakubchamera/credentials/796ca0b5859adbc4",
+  },
+  {
+    title: "Azure Fundamentals",
     icon: "/certificationImages/az_900.png",
     link: "https://www.credly.com/badges/ef973cd6-81c2-4ae8-af1e-a2e736b34a24/public_url",
   },
   {
-    title: "Azure AI Fundamentals (AI-900)",
+    title: "Azure AI Fundamentals",
     icon: "/certificationImages/ai_900.png",
     link: "https://www.credly.com/badges/23331e4a-02ca-4d8f-b5a1-e54e865dcdc7/public_url",
   },
   {
-    title: "Azure Data Fundamentals (DP-900)",
+    title: "Azure Data Fundamentals",
     icon: "/certificationImages/dp_900.png",
     link: "https://www.credly.com/badges/c94e3785-a0c4-4ffd-b6f8-136ecc614379/public_url",
   },
   {
-    title: "Azure Security Fundamentals (SC-900)",
+    title: "Azure Security Fundamentals",
     icon: "/certificationImages/sc_900.png",
     link: "https://www.credly.com/badges/48f3503b-3625-4b7d-9466-49ecd8f65afd/public_url",
   },
