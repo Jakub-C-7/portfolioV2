@@ -33,11 +33,12 @@ const TreeSwingCanvas = () => {
   return (
     <Canvas
       className="cursor-pointer sm:pl-16 sm:pt-0 pt-6"
+      // className="cursor-pointer sm:pl-16 sm:pt-0 pt-6 h-screen"
       frameloop="always"
       shadows
       camera={{
         position: [-51, 124, 273],
-        fov: 50,
+        fov: 55,
         rotation: [-22.64, -5.18, -2.16],
         near: 0.1,
       }}

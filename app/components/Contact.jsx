@@ -22,13 +22,18 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="h-full w-full bg-background-contact">
+      {/* <div className="h-full w-full bg-background-contact"> */}
+      <div className="absolute top-0 left-0 h-full w-full bg-background-contact">
         <TreeSwingCanvas />
       </div>
 
       {/* <div className="flex sm:flex-row flex-col-reverse w-full h-full"> */}
-      <div className="absolute bottom-10 left-10 ">
-        <form className="sm:ml-20 mx-auto" id="contact-form" method="post">
+      <div className="absolute sm:bottom-30 bottom-10 left-10 ">
+        <form
+          className="sm:ml-28 xl:ml-52 mx-auto"
+          id="contact-form"
+          method="post"
+        >
           <div>
             <label htmlFor="Name">Your name</label>
             <div className="opacity-50">
