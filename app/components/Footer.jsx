@@ -9,12 +9,12 @@ const Footer = () => {
       id="footer"
       className="relative z-0 w-full h-1/5 mx-auto bg-background-contact"
     >
-      <div
-        className={`${styles.paddingX} max-w-7xl mx-auto flex justify-center gap-5 pt-4`}
-      >
-        <div className="flex">
-          <p className={`text-l text-white mt-10`}>Art Credits</p>
-        </div>
+      <div className="self-center">
+        <h2
+          className={`${styles.sectionHeadText} text-white flex justify-center`}
+        >
+          thank you!
+        </h2>
       </div>
 
       <div
@@ -43,12 +43,14 @@ const Footer = () => {
         </a>
       </div>
 
+      <div className={`${styles.paddingX} max-w-7xl flex justify-center mb-6`}>
+        <p className={`text-white mt-10 text-xl`}>Art Credits</p>
+      </div>
+
       <div
-        className={`${styles.paddingX} max-w-7xl mx-auto flex justify-around gap-5 pt-4 opacity-40`}
+        className={`${styles.paddingX} max-w-7xl mx-auto flex justify-center gap-5 pt-4 opacity-40`}
       >
-        <div className="flex">
-          <p className={`text-white text-sm`}>&copy;Jakub Chamera</p>
-        </div>
+        <p className={`text-white text-sm`}>&copy;Jakub Chamera</p>
       </div>
     </section>
   );
