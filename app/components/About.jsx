@@ -37,7 +37,7 @@ const About = () => {
       <>
         <motion.div
           // className="sm:mt-20 mt-10 mb-10 flex xs:flex-row flex-row mx-auto"
-          className={`${styles.paddingX} max-w-7xl mx-auto flex justify-end items-end gap-5`}
+          className={`${styles.paddingX} max-w-7xl mx-auto flex justify-center xs:justify-start xs:flex-row-reverse items-end gap-5`}
           variants={textVariant()}
           id="about"
         >
@@ -75,7 +75,7 @@ const About = () => {
           </div>
         </div>
         <motion.div
-          className="mt-10 flex flex-wrap gap-10 justify-center"
+          className="mt-20 flex flex-wrap gap-10 justify-center"
           variants={fadeIn("", "", 0.1, 1)}
         >
           {services.map((service, index) => (
