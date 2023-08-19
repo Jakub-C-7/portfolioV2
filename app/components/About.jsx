@@ -37,7 +37,7 @@ const About = () => {
       <>
         <motion.div
           // className="sm:mt-20 mt-10 mb-10 flex xs:flex-row flex-row mx-auto"
-          className={`${styles.paddingX} max-w-7xl mx-auto flex flex-row items-end gap-5`}
+          className={`${styles.paddingX} max-w-7xl mx-auto flex justify-end items-end gap-5`}
           variants={textVariant()}
           id="about"
         >
