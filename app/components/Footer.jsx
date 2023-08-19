@@ -23,14 +23,14 @@ const Footer = () => {
         <a
           target="_blank"
           href="mailto:jakubchamera7@gmail.com"
-          className="flex"
+          className="flex transition hover:scale-110"
         >
           <Image width={100} height={100} src="/socialsIcons/mail_main.png" />
         </a>
         <a
           target="_blank"
           href="https://www.linkedin.com/in/jakubchamera/"
-          className="flex"
+          className="flex transition hover:scale-110"
         >
           <Image
             width={100}
@@ -38,7 +38,11 @@ const Footer = () => {
             src="/socialsIcons/linkedin_main.png"
           />
         </a>
-        <a target="_blank" href="https://github.com/Jakub-C-7" className="flex">
+        <a
+          target="_blank"
+          href="https://github.com/Jakub-C-7"
+          className="flex transition hover:scale-110"
+        >
           <Image width={100} height={100} src="/socialsIcons/github_main.png" />
         </a>
       </div>
