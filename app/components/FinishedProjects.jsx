@@ -41,7 +41,7 @@ const FinishedProjects = () => {
                 className="flex flex-row-reverse text-tertiary"
                 variants={textVariant()}
               >
-                <Link href={project.source_code_link}>
+                <Link href={project.source_code_link} target="_blank">
                   <h3 className="hover:underline mb-6">{project.name}</h3>
                 </Link>
               </motion.div>
@@ -69,50 +69,6 @@ const FinishedProjects = () => {
               </motion.div>
             </motion.div>
           ))}
-          {/* <motion.div
-            variants={textVariant()}
-            className="rounded-lg bg-[#211e35] p-6"
-          >
-            <motion.div
-              className="flex flex-row-reverse text-tertiary"
-              variants={textVariant()}
-            >
-              <h3>project name</h3>
-            </motion.div>
-
-            <img
-              className="sm:object-cover object-scale-down rounded-lg w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] "
-              src="vercel.svg"
-            />
-
-            <div className="flex mb-10 gap-10 sm:justify-start sm:flex-row flex-col select-none pointer-events-none">
-              <motion.div className="mx-auto" variants={textVariant()}>
-                <Image
-                  className="sm:object-cover object-scale-down rounded-lg w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] "
-                  width={300}
-                  height={300}
-                  src={"/vercel.svg"}
-                  alt="project name"
-                />
-              </motion.div>
-
-              <div className="self-center w-4/5">
-                <motion.p variants={fadeIn("", "", 0.1, 1)}>
-                  This is where i will talk about my project.This is where i
-                  will talk about my projectThis is where i will talk about my
-                  projectThis is where i will talk about my projectThis is where
-                  i will talk about my project
-                </motion.p>
-
-                <motion.p
-                  className="mt-10 mb-0"
-                  variants={fadeIn("", "", 0.1, 1)}
-                >
-                  <span className="text-tertiary">#mongodb #java</span>
-                </motion.p>
-              </div>
-            </div>
-          </motion.div> */}
         </Carousel>
       </>
     </ComponentLayout>
