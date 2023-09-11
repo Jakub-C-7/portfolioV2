@@ -9,13 +9,38 @@ Title: Stylized hand painted scene
 
 import React, { useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
+import * as THREE from "three";
 
 export function TreeSwing(isMobile) {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF(
+  const { nodes, materials, animations, scene } = useGLTF(
     "/tree_swing-transformed.glb"
   );
-  const { actions } = useAnimations(animations, group);
+
+  //Animate
+  const mixer = new THREE.AnimationMixer(scene);
+  const clock = new THREE.Clock();
+
+  // console.log(animations);
+
+  // animations.forEach((clip) => {
+  //   mixer.clipAction(clip).play();
+  // });
+
+  // Play single animation
+  const action = mixer.clipAction(animations[0]); // play the first animation
+  action.play();
+
+  animate();
+
+  function animate() {
+    requestAnimationFrame(animate);
+
+    const delta = clock.getDelta();
+
+    mixer.update(delta);
+  }
+
   return (
     <group
       scale={isMobile.isMobile ? 1 : 1}

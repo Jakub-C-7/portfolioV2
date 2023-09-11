@@ -12,6 +12,7 @@ import { useGLTF } from "@react-three/drei";
 
 export function Workbench(isMobile) {
   const { nodes, materials } = useGLTF("/workbench-transformed.glb");
+
   return (
     <group
       // frustumCulled={false}

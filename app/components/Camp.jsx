@@ -10,7 +10,7 @@ Title: camping buscraft ambience
 import React, { useRef, useEffect } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 // import { useFrame } from "@react-three/fiber";
-// import * as THREE from "three";
+import * as THREE from "three";
 // import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 export function Camp(isMobile) {
@@ -18,19 +18,30 @@ export function Camp(isMobile) {
   const { nodes, materials, animations, scene } = useGLTF(
     "/camp-transformed.glb"
   );
-  const { actions, names } = useAnimations(animations);
 
-  // useEffect(() => {
-  //   const mixer = new THREE.AnimationMixer(scene);
-  //   const action = mixer.clipAction(animations[0]);
-  //   console.log(scene);
-  //   // console.log(group);
-  //   action.play();
+  //Animate
+  const mixer = new THREE.AnimationMixer(scene);
+  const clock = new THREE.Clock();
+
+  // console.log(animations);
+
+  // animations.forEach((clip) => {
+  //   mixer.clipAction(clip).play();
   // });
 
-  // console.log(scene);
-  // console.log(animations[0]);
-  // console.log(actions);
+  // Play single animation
+  const action = mixer.clipAction(animations[0]); // play the first animation
+  action.play();
+
+  animate();
+
+  function animate() {
+    requestAnimationFrame(animate);
+
+    const delta = clock.getDelta();
+
+    mixer.update(delta);
+  }
 
   return (
     <group
