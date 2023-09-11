@@ -55,8 +55,6 @@ const TreeSwingCanvas = () => {
 
         <TreeSwing isMobile={isMobile} />
       </Suspense>
-
-      <Preload all />
     </Canvas>
   );
 };

@@ -64,8 +64,6 @@ const FloppyCanvas = ({ icon }) => {
           <Floppy imgUrl={icon} isMobile={isMobile} />
         </Float>
       </Suspense>
-
-      <Preload all />
     </Canvas>
   );
 };

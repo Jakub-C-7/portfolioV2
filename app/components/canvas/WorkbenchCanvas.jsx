@@ -53,8 +53,6 @@ const WorkbenchCanvas = () => {
           <Workbench isMobile={isMobile} />
         </Float>
       </Suspense>
-
-      <Preload all />
     </Canvas>
   );
 };

@@ -55,8 +55,6 @@ const CampCanvas = () => {
         />
         <Camp className="w-1/2 h-1/2 " isMobile={isMobile} />
       </Suspense>
-
-      <Preload all />
     </Canvas>
   );
 };
