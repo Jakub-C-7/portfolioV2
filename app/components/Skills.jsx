@@ -16,7 +16,9 @@ const Skills = () => {
         id="tech"
       >
         <div className="self-center">
-          <p className={styles.sectionSubText}>recent tools in the workshop</p>
+          <p className={styles.sectionSubText}>
+            frequent tools in the workshop
+          </p>
           <h2 className={styles.sectionHeadText}>technologies</h2>
         </div>
       </motion.div>

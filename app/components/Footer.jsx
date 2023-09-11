@@ -15,6 +15,10 @@ const Footer = () => {
         >
           thank you!
         </h2>
+        <p className={"text-white flex justify-center"}>
+          i appreciate you stopping by my campsite, find out even more about me
+          below
+        </p>
       </div>
 
       <div

@@ -55,7 +55,7 @@ const Certs = () => {
         id="certs"
       >
         <div className="self-center">
-          <p className={styles.sectionSubText}>a few more of my specialties</p>
+          <p className={styles.sectionSubText}>specialties of the workshop</p>
           <h2 className={styles.sectionHeadText}>certifications</h2>
         </div>
       </motion.div>

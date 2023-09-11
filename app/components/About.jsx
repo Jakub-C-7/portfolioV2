@@ -62,7 +62,7 @@ const About = () => {
               I'm a <span className="text-primary">Software Engineer</span> with
               over{" "}
               <span className="text-primary">6 years of coding experience</span>
-              , working remotely from (rarely) sunny 16*C Shropshire, England.
+              , working remotely from (rarely) sunny 16°C Shropshire, England.
             </motion.p>
 
             <motion.p className="mt-10 mb-0" variants={fadeIn("", "", 0.1, 1)}>
