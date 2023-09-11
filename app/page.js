@@ -23,7 +23,7 @@ export default function Home() {
 
         <FinishedProjects />
 
-        <SkillsCertsGreeting />
+        {/* <SkillsCertsGreeting /> */}
         <Skills />
         <Certs />
         <Contact />

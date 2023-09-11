@@ -8,7 +8,7 @@ Title: Stylized hand painted scene
 */
 
 import React, { useRef } from "react";
-import { useGLTF, useAnimations } from "@react-three/drei";
+import { useGLTF } from "@react-three/drei";
 import * as THREE from "three";
 
 export function TreeSwing(isMobile) {

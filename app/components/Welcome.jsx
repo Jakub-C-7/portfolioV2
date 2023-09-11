@@ -27,22 +27,6 @@ const Welcome = () => {
 
       <CampCanvas />
 
-      {/* <div class="sketchfab-embed-wrapper">
-        <iframe
-          title="camping buscraft ambience"
-          frameborder="0"
-          allowfullscreen
-          mozallowfullscreen="true"
-          webkitallowfullscreen="true"
-          allow="autoplay; fullscreen; xr-spatial-tracking"
-          xr-spatial-tracking
-          execution-while-out-of-viewport
-          execution-while-not-rendered
-          web-share
-          src="https://sketchfab.com/models/7b65e4df95c3492fbf4e0641e3b472c1/embed?autostart=1"
-        ></iframe>
-      </div> */}
-
       <div className="absolute xs:bottom-3 bottom-1 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[30px] h-[50px] rounded-3xl border-4 border-secondary flex justify-end items-end p-2">

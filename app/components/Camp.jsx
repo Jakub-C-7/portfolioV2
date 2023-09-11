@@ -8,13 +8,13 @@ Title: camping buscraft ambience
 */
 
 import React, { useRef, useEffect } from "react";
-import { useGLTF, useAnimations } from "@react-three/drei";
-// import { useFrame } from "@react-three/fiber";
+import { useGLTF } from "@react-three/drei";
 import * as THREE from "three";
+// import { useFrame } from "@react-three/fiber";
 // import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 export function Camp(isMobile) {
-  const group = useRef();
+  // const group = useRef();
   const { nodes, materials, animations, scene } = useGLTF(
     "/camp-transformed.glb"
   );
