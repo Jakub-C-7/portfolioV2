@@ -4,7 +4,6 @@ import Navbar from "./Navbar";
 import About from "./About";
 import WorkshopGreeting from "./WorkshopGreeting";
 import FinishedProjects from "./FinishedProjects";
-import InProgressProjects from "./InProgressProjects";
 import SkillsCertsGreeting from "./SkillsCertsGreeting";
 import Skills from "./Skills";
 import Certs from "./Certs";
@@ -17,7 +16,6 @@ export {
   About,
   WorkshopGreeting,
   FinishedProjects,
-  InProgressProjects,
   SkillsCertsGreeting,
   Skills,
   Certs,

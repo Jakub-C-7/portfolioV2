@@ -2,7 +2,6 @@ import Welcome from "./components/Welcome";
 import {
   WorkshopGreeting,
   FinishedProjects,
-  InProgressProjects,
   SkillsCertsGreeting,
   Skills,
   Certs,
@@ -23,7 +22,6 @@ export default function Home() {
         <WorkshopGreeting />
 
         <FinishedProjects />
-        <InProgressProjects />
 
         <SkillsCertsGreeting />
         <Skills />
