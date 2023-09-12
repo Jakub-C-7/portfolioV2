@@ -31,8 +31,10 @@ const Contact = () => {
       <div className="absolute sm:bottom-30 bottom-10 left-10 ">
         <form
           className="sm:ml-28 xl:ml-52 mx-auto"
-          id="contact-form"
-          method="post"
+          id="contact"
+          name="contact"
+          method="POST"
+          data-netlify="true"
         >
           <div>
             <label htmlFor="Name">Your name</label>
