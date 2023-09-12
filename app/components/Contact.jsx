@@ -29,8 +29,8 @@ const Contact = () => {
       <div className="absolute sm:bottom-30 bottom-10 left-10 ">
         <form
           className="sm:ml-28 xl:ml-52 mx-auto"
-          id="contact"
-          name="contact"
+          id="contact_v2"
+          name="contact_v2"
           method="POST"
           data-netlify="true"
         >
