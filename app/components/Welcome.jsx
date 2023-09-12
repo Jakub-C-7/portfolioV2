@@ -27,7 +27,7 @@ const Welcome = () => {
 
       <CampCanvas />
 
-      <div className="absolute xs:bottom-3 bottom-1 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-3 bottom-3 w-full h-1/4 flex justify-center items-end">
         <a href="#about">
           <div className="w-[30px] h-[50px] rounded-3xl border-4 border-secondary flex justify-end items-end p-2">
             <motion.div
