@@ -66,6 +66,7 @@ const Contact = () => {
               Send Message
             </button>
           </div>
+          <input type="hidden" name="contact_v2" value="contact_v2" />
         </form>
       </div>
     </section>
