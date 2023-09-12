@@ -33,7 +33,12 @@ const Footer = () => {
           href="mailto:jakubchamera7@gmail.com"
           className="flex transition hover:scale-110"
         >
-          <Image width={100} height={100} src="/socialsIcons/mail_main.png" />
+          <Image
+            width={100}
+            height={100}
+            alt="mail icon"
+            src="/socialsIcons/mail_main.png"
+          />
         </a>
         <a
           target="_blank"
@@ -43,6 +48,7 @@ const Footer = () => {
           <Image
             width={100}
             height={100}
+            alt="linkedin icon"
             src="/socialsIcons/linkedin_main.png"
           />
         </a>
@@ -51,7 +57,12 @@ const Footer = () => {
           href="https://github.com/Jakub-C-7"
           className="flex transition hover:scale-110"
         >
-          <Image width={100} height={100} src="/socialsIcons/github_main.png" />
+          <Image
+            width={100}
+            height={100}
+            alt="github icon"
+            src="/socialsIcons/github_main.png"
+          />
         </a>
       </div>
 
