@@ -26,7 +26,7 @@ const Footer = () => {
         </p>
       </div>
       <div
-        className={`${styles.paddingX} max-w-7xl flex justify-center mt-10 mb-10 gap-10`}
+        className={`${styles.paddingX} max-w-7xl flex justify-center mt-10 mb-10 gap-10 mx-auto`}
       >
         <a
           target="_blank"
@@ -54,41 +54,6 @@ const Footer = () => {
           <Image width={100} height={100} src="/socialsIcons/github_main.png" />
         </a>
       </div>
-      {/* <div
-        className={`${styles.paddingX} flex mx-auto max-w-[20%] mb-6 hover:bg-[#E37A3E] rounded`}
-      >
-        <button
-          className={`text-white text-xl mx-auto my-auto`}
-          onClick={handleClick}
-          type="button"
-          id="show_credits_button"
-        >
-          Art Credits
-        </button>
-      </div> */}
-
-      {/* <div
-        onClick={handleClick}
-        className="mx-auto"
-        // className={`mx-auto max-w-[20%] hover:bg-[#E37A3E] rounded`}
-        // className="mx-auto hover:bg-[#E37A3E] rounded max-w-[20%]"
-      >
-        <div
-          className={`${styles.paddingX} mx-auto max-w-[20%] mb-6 hover:bg-[#E37A3E] rounded`}
-        >
-          Art Credits
-        </div>
-
-        <div class="popup">
-          <p
-            className={`text-white text-sm opacity-0`}
-            class="popuptext"
-            id="myPopup"
-          >
-            Popup text...
-          </p>
-        </div>
-      </div> */}
 
       <div
         className={`${styles.paddingX} flex mx-auto max-w-[20%] mb-6 hover:bg-[#E37A3E] rounded justify-center`}
