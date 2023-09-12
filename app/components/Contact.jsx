@@ -70,18 +70,18 @@ const Contact = () => {
           </div>
         </form> */}
 
-        <form id="contact" name="contact" method="POST" data-netlify="true">
+        <form
+          className="sm:ml-28 xl:ml-52 mx-auto"
+          id="contact"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+        >
           <input type="hidden" name="form-name" value="contact" />
           <div>
             <label htmlFor="myName">Your name</label>
             <div className="opacity-50">
-              <input
-                id="myName"
-                type="text"
-                name="name"
-                placeholder="enter your name"
-                required
-              />
+              <input id="myName" type="text" name="name" required />
             </div>
           </div>
           {/* <label for="myName">Name: </label>
@@ -96,13 +96,7 @@ const Contact = () => {
           <div>
             <label htmlFor="myEmail">Your email address</label>
             <div className="opacity-50">
-              <input
-                id="myEmail"
-                type="email"
-                name="email"
-                placeholder="enter your email"
-                required
-              />
+              <input id="myEmail" type="email" name="email" required />
             </div>
           </div>
 
@@ -121,7 +115,6 @@ const Contact = () => {
               <textarea
                 id="myMessage"
                 name="body"
-                placeholder="enter your message"
                 rows="4"
                 cols="50"
                 required
@@ -139,7 +132,12 @@ const Contact = () => {
             required
           ></textarea> */}
 
-          <input type="submit" value="Send" />
+          {/* <input type="submit" value="Send" /> */}
+          <div className="hover:bg-[#E37A3E] rounded">
+            <button type="submit" id="submit_button">
+              Send Message
+            </button>
+          </div>
         </form>
       </div>
     </section>
