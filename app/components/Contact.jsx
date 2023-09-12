@@ -10,9 +10,9 @@ const Contact = () => {
       className="relative z-0 w-full h-screen mx-auto bg-background-contact"
     >
       <div
-        className={`${styles.paddingX} max-w-7xl mx-auto flex flex-row items-end gap-5 justify-end pt-4`}
+        className={`${styles.paddingX} max-w-7xl mx-auto flex flex-row items-end gap-5 justify-end pt-4 w-full`}
       >
-        <div className="flex flex-col">
+        <div className="flex flex-col z-50">
           <h1 className={`${styles.sectionHeadText} text-white`}>
             get in touch
           </h1>
@@ -26,7 +26,7 @@ const Contact = () => {
         <TreeSwingCanvas />
       </div>
 
-      <div className="absolute sm:bottom-30 bottom-10 left-10 ">
+      <div className="absolute sm:bottom-30 bottom-10 left-10 w-4/5 ">
         <form
           className="sm:ml-28 xl:ml-52 mx-auto"
           id="contact"

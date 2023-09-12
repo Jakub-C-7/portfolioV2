@@ -7,7 +7,7 @@ import WorkbenchCanvas from "./canvas/WorkbenchCanvas";
 
 const WorkshopGreeting = () => {
   return (
-    <section id="workshop" className="relative w-full h-screen mx-auto">
+    <section id="workshop" className="relative w-full h-80v mx-auto">
       <motion.div
         variants={textVariant()}
         className={`${styles.paddingX} max-w-7xl mx-auto flex flex-row items-end gap-5 mb-8`}

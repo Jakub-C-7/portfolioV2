@@ -17,7 +17,7 @@ const FinishedProjects = () => {
         <motion.div
           // className="sm:mt-20 mt-10 mb-10 flex xs:flex-row-reverse self-center h-3/4"
           // variants={textVariant()}
-          className={`${styles.paddingX} max-w-7xl mx-auto flex flex-row xs:flex-row-reverse items-end gap-5 mb-8 mt-12`}
+          className={`${styles.paddingX} max-w-7xl mx-auto flex flex-row xs:flex-row-reverse items-end gap-5 mb-8 mt-12 z-50`}
           variants={textVariant()}
           id="finishedprojects"
         >
