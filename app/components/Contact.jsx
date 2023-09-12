@@ -22,12 +22,10 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* <div className="h-full w-full bg-background-contact"> */}
       <div className="absolute top-0 left-0 h-full w-full bg-background-contact">
         <TreeSwingCanvas />
       </div>
 
-      {/* <div className="flex sm:flex-row flex-col-reverse w-full h-full"> */}
       <div className="absolute sm:bottom-30 bottom-10 left-10 ">
         <form
           className="sm:ml-28 xl:ml-52 mx-auto"
@@ -37,25 +35,25 @@ const Contact = () => {
           data-netlify="true"
         >
           <div>
-            <label htmlFor="Name">Your name</label>
+            <label htmlFor="myName">Your name</label>
             <div className="opacity-50">
-              <input type="text" id="Name" name="Name" required />
+              <input type="text" id="myName" name="name" required />
             </div>
           </div>
 
           <div>
-            <label htmlFor="Email">Your email address</label>
+            <label htmlFor="myEmail">Your email address</label>
             <div className="opacity-50">
-              <input type="email" id="Email" name="Email" required />
+              <input type="email" id="myEmail" name="email" required />
             </div>
           </div>
 
           <div>
-            <label htmlFor="Message">Your message</label>
+            <label htmlFor="myMessage">Your message</label>
             <div className="opacity-50">
               <textarea
-                id="Message"
-                name="Message"
+                id="myMessage"
+                name="body"
                 rows="6"
                 maxLength="2000"
                 required
