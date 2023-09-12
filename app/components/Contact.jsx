@@ -69,6 +69,51 @@ const Contact = () => {
             </button>
           </div>
         </form>
+
+        <form id="contact" name="contact" method="POST" data-netlify="true">
+          <h2>Contact me!</h2>
+          <label for="myName">Name: </label>
+          <input
+            id="myName"
+            type="text"
+            name="name"
+            placeholder="enter your name"
+            required
+          />
+          <label for="myEmail">Email: </label>
+          <input
+            id="myEmail"
+            type="email"
+            name="email"
+            placeholder="enter your email"
+            required
+          />
+          <label for="myConfirmation">Confirm email: </label>
+          <input
+            id="myConfirmation"
+            type="email"
+            placeholder="confirm your email"
+            required
+          />
+          <label for="mySubject">Subject: </label>
+          <input
+            id="mySubject"
+            type="text"
+            name="subject"
+            placeholder="enter your subject"
+            required
+          />
+          <label for="myMessage">Message: </label>
+          <textarea
+            id="myMessage"
+            name="body"
+            placeholder="enter your message"
+            rows="4"
+            cols="50"
+            required
+          ></textarea>
+          <input type="submit" value="Send" />
+        </form>
       </div>
     </section>
   );
