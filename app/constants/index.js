@@ -276,7 +276,7 @@ const finishedProjects = [
       },
     ],
     image: "../projectImages/portfoliov1.gif",
-    source_code_link: "https://github.com/Jakub-C-7/portfolioV2",
+    source_code_link: "https://github.com/Jakub-C-7/portfolioV1",
   },
 ];
 
