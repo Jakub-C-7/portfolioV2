@@ -55,14 +55,13 @@ const Contact = () => {
               <textarea
                 id="myMessage"
                 name="body"
-                rows="4"
-                cols="50"
+                rows="6"
+                maxLength="2000"
                 required
               ></textarea>
             </div>
           </div>
 
-          {/* <input type="submit" value="Send" /> */}
           <div className="hover:bg-[#E37A3E] rounded">
             <button type="submit" id="submit_button">
               Send Message
