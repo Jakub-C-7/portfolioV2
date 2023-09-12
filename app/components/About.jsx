@@ -80,7 +80,7 @@ const About = () => {
           </div>
         </div>
         <motion.div
-          className="mt-20 flex flex-wrap gap-10 justify-center mx-auto max-w-[70%]"
+          className="mt-20 mb-12 flex flex-wrap gap-10 justify-center mx-auto max-w-[70%]"
           variants={fadeIn("", "", 0.1, 1)}
         >
           {services.map((service, index) => (

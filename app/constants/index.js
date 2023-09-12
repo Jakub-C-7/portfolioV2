@@ -1,5 +1,3 @@
-// import { coding, computer, idea, network } from "../assets";
-
 export const navLinks = [
   {
     id: "about",

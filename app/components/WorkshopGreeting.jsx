@@ -10,7 +10,7 @@ const WorkshopGreeting = () => {
     <section id="workshop" className="relative w-full h-screen mx-auto">
       <motion.div
         variants={textVariant()}
-        className={`${styles.paddingX} max-w-7xl mx-auto flex flex-row items-end gap-5`}
+        className={`${styles.paddingX} max-w-7xl mx-auto flex flex-row items-end gap-5 mb-8`}
       >
         <motion.div variants={fadeIn("", "", 0.1, 1)} className="flex flex-col">
           <h1 className={`${styles.headText} `}>the workshop</h1>
