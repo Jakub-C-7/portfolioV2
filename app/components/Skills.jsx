@@ -11,7 +11,7 @@ const Skills = () => {
   return (
     <ComponentLayout>
       <motion.div
-        className={`${styles.paddingX} max-w-7xl mx-auto flex items-end gap-5 ml-0`}
+        className={`${styles.paddingX} max-w-7xl mx-auto flex items-end gap-5 ml-0 mt-8`}
         variants={textVariant()}
         id="tech"
       >

@@ -54,12 +54,12 @@ const Certs = () => {
         variants={textVariant()}
         id="certs"
       >
-        <div className="self-center">
+        <div className="self-center mt-8">
           <p className={styles.sectionSubText}>specialties of the workshop</p>
           <h2 className={styles.sectionHeadText}>certifications</h2>
         </div>
       </motion.div>
-      <motion.div className="mt-10 flex flex-wrap gap-10 justify-center w-3/4 mx-auto">
+      <motion.div className="mt-12 mb-12 flex flex-wrap gap-10 justify-center w-3/4 mx-auto">
         {certifications.map((cert, index) => (
           <Link key={cert.title + "_link"} href={cert.link} target="_blank">
             <CertCard key={cert.title} index={index} {...cert} />
