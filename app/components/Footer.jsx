@@ -20,9 +20,8 @@ const Footer = () => {
         >
           thank you!
         </h2>
-        <p className={"text-white flex justify-center"}>
-          i appreciate you stopping by my campsite, find out even more about me
-          below
+        <p className={"text-white flex justify-center text-center"}>
+          for stopping by my campsite, find out even more about me below
         </p>
       </div>
       <div
@@ -67,7 +66,7 @@ const Footer = () => {
       </div>
 
       <div
-        className={`${styles.paddingX} flex mx-auto max-w-[20%] mb-6 hover:bg-[#E37A3E] rounded justify-center`}
+        className={`${styles.paddingX} flex mx-auto max-w-[20%] mb-6 hover:bg-[#E37A3E] rounded justify-center text-center`}
       >
         <div className="popup" onClick={handleClick}>
           Art Credits
