@@ -27,49 +27,6 @@ const Contact = () => {
       </div>
 
       <div className="absolute sm:bottom-30 bottom-10 left-10 ">
-        {/* <form
-          className="sm:ml-28 xl:ml-52 mx-auto"
-          id="contact_v2"
-          name="contact_v2"
-          method="POST"
-          netlify
-        >
-          <input type="hidden" name="form-name" value="contact_v2" />
-
-          <div>
-            <label htmlFor="myName">Your name</label>
-            <div className="opacity-50">
-              <input type="text" id="myName" name="name" required />
-            </div>
-          </div>
-
-          <div>
-            <label htmlFor="myEmail">Your email address</label>
-            <div className="opacity-50">
-              <input type="email" id="myEmail" name="email" required />
-            </div>
-          </div>
-
-          <div>
-            <label htmlFor="myMessage">Your message</label>
-            <div className="opacity-50">
-              <textarea
-                id="myMessage"
-                name="body"
-                rows="6"
-                maxLength="2000"
-                required
-              ></textarea>
-            </div>
-          </div>
-
-          <div className="hover:bg-[#E37A3E] rounded">
-            <button type="submit" id="submit_button">
-              Send Message
-            </button>
-          </div>
-        </form> */}
-
         <form
           className="sm:ml-28 xl:ml-52 mx-auto"
           id="contact"
@@ -84,14 +41,6 @@ const Contact = () => {
               <input id="myName" type="text" name="name" required />
             </div>
           </div>
-          {/* <label for="myName">Name: </label>
-          <input
-            id="myName"
-            type="text"
-            name="name"
-            placeholder="enter your name"
-            required
-          /> */}
 
           <div>
             <label htmlFor="myEmail">Your email address</label>
@@ -99,15 +48,6 @@ const Contact = () => {
               <input id="myEmail" type="email" name="email" required />
             </div>
           </div>
-
-          {/* <label for="myEmail">Email: </label>
-          <input
-            id="myEmail"
-            type="email"
-            name="email"
-            placeholder="enter your email"
-            required
-          /> */}
 
           <div>
             <label htmlFor="myMessage">Your message</label>
@@ -121,16 +61,6 @@ const Contact = () => {
               ></textarea>
             </div>
           </div>
-
-          {/* <label for="myMessage">Message: </label>
-          <textarea
-            id="myMessage"
-            name="body"
-            placeholder="enter your message"
-            rows="4"
-            cols="50"
-            required
-          ></textarea> */}
 
           {/* <input type="submit" value="Send" /> */}
           <div className="hover:bg-[#E37A3E] rounded">
