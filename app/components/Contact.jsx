@@ -32,7 +32,7 @@ const Contact = () => {
           id="contact_v2"
           name="contact_v2"
           method="POST"
-          data-netlify="true"
+          netlify
         >
           <div>
             <label htmlFor="myName">Your name</label>
