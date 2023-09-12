@@ -34,6 +34,8 @@ const Contact = () => {
           method="POST"
           netlify
         >
+          <input type="hidden" name="form-name" value="contact_v2" />
+
           <div>
             <label htmlFor="myName">Your name</label>
             <div className="opacity-50">
@@ -66,7 +68,6 @@ const Contact = () => {
               Send Message
             </button>
           </div>
-          <input type="hidden" name="contact_v2" value="contact_v2" />
         </form>
       </div>
     </section>
