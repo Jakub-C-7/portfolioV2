@@ -71,6 +71,7 @@ const Contact = () => {
         </form> */}
 
         <form id="contact" name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
           {/* <div>
             <label htmlFor="myName">Your name</label>
             <div className="opacity-50">
