@@ -71,7 +71,7 @@ const Contact = () => {
         </form> */}
 
         <form id="contact" name="contact" method="POST" data-netlify="true">
-          <div>
+          {/* <div>
             <label htmlFor="myName">Your name</label>
             <div className="opacity-50">
               <input
@@ -82,16 +82,17 @@ const Contact = () => {
                 required
               />
             </div>
-          </div>
-          {/* <label for="myName">Name: </label>
+          </div> */}
+          <label for="myName">Name: </label>
           <input
             id="myName"
             type="text"
             name="name"
             placeholder="enter your name"
             required
-          /> */}
-          <div>
+          />
+
+          {/* <div>
             <label htmlFor="myEmail">Your email address</label>
             <div className="opacity-50">
               <input
@@ -102,17 +103,18 @@ const Contact = () => {
                 required
               />
             </div>
-          </div>
-          {/* <label for="myEmail">Email: </label>
+          </div> */}
+
+          <label for="myEmail">Email: </label>
           <input
             id="myEmail"
             type="email"
             name="email"
             placeholder="enter your email"
             required
-          /> */}
+          />
 
-          <div>
+          {/* <div>
             <label htmlFor="myMessage">Your message</label>
             <div className="opacity-50">
               <textarea
@@ -124,9 +126,9 @@ const Contact = () => {
                 required
               ></textarea>
             </div>
-          </div>
+          </div> */}
 
-          {/* <label for="myMessage">Message: </label>
+          <label for="myMessage">Message: </label>
           <textarea
             id="myMessage"
             name="body"
@@ -134,7 +136,8 @@ const Contact = () => {
             rows="4"
             cols="50"
             required
-          ></textarea> */}
+          ></textarea>
+
           <input type="submit" value="Send" />
         </form>
       </div>
