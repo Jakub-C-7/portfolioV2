@@ -27,7 +27,7 @@ const Contact = () => {
       </div>
 
       <div className="absolute sm:bottom-30 bottom-10 left-10 ">
-        <form
+        {/* <form
           className="sm:ml-28 xl:ml-52 mx-auto"
           id="contact_v2"
           name="contact_v2"
@@ -68,42 +68,65 @@ const Contact = () => {
               Send Message
             </button>
           </div>
-        </form>
+        </form> */}
 
         <form id="contact" name="contact" method="POST" data-netlify="true">
-          <h2>Contact me!</h2>
-          <label for="myName">Name: </label>
+          <div>
+            <label htmlFor="myName">Your name</label>
+            <div className="opacity-50">
+              <input
+                id="myName"
+                type="text"
+                name="name"
+                placeholder="enter your name"
+                required
+              />
+            </div>
+          </div>
+          {/* <label for="myName">Name: </label>
           <input
             id="myName"
             type="text"
             name="name"
             placeholder="enter your name"
             required
-          />
-          <label for="myEmail">Email: </label>
+          /> */}
+          <div>
+            <label htmlFor="myEmail">Your email address</label>
+            <div className="opacity-50">
+              <input
+                id="myEmail"
+                type="email"
+                name="email"
+                placeholder="enter your email"
+                required
+              />
+            </div>
+          </div>
+          {/* <label for="myEmail">Email: </label>
           <input
             id="myEmail"
             type="email"
             name="email"
             placeholder="enter your email"
             required
-          />
-          <label for="myConfirmation">Confirm email: </label>
-          <input
-            id="myConfirmation"
-            type="email"
-            placeholder="confirm your email"
-            required
-          />
-          <label for="mySubject">Subject: </label>
-          <input
-            id="mySubject"
-            type="text"
-            name="subject"
-            placeholder="enter your subject"
-            required
-          />
-          <label for="myMessage">Message: </label>
+          /> */}
+
+          <div>
+            <label htmlFor="myMessage">Your message</label>
+            <div className="opacity-50">
+              <textarea
+                id="myMessage"
+                name="body"
+                placeholder="enter your message"
+                rows="4"
+                cols="50"
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          {/* <label for="myMessage">Message: </label>
           <textarea
             id="myMessage"
             name="body"
@@ -111,7 +134,7 @@ const Contact = () => {
             rows="4"
             cols="50"
             required
-          ></textarea>
+          ></textarea> */}
           <input type="submit" value="Send" />
         </form>
       </div>
