@@ -1,4 +1,4 @@
-import { coding, computer, idea, network } from "../assets";
+// import { coding, computer, idea, network } from "../assets";
 
 export const navLinks = [
   {
@@ -18,19 +18,19 @@ export const navLinks = [
 const services = [
   {
     title: "Web Developer",
-    icon: coding,
+    icon: "introIcons/coding.gif",
   },
   {
     title: "Full-Stack Engineer",
-    icon: computer,
+    icon: "introIcons/computer.gif",
   },
   {
     title: "Cloud Developer",
-    icon: network,
+    icon: "introIcons/network.gif",
   },
   {
     title: "Problem Solver",
-    icon: idea,
+    icon: "introIcons/idea.gif",
   },
 ];
 
