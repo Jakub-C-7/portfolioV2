@@ -62,7 +62,7 @@ const About = () => {
             />
           </motion.div>
 
-          <div className="self-center mx-auto ml-0">
+          <div className="self-center mx-auto ml-0 text-white">
             <motion.p variants={fadeIn("", "", 0.1, 1)}>
               I'm a <span className="text-primary">Software Engineer</span> with
               over{" "}

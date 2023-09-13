@@ -68,7 +68,7 @@ const Footer = () => {
       <div
         className={`${styles.paddingX} flex mx-auto max-w-[20%] mb-6 hover:bg-[#E37A3E] rounded justify-center text-center`}
       >
-        <div className="popup" onClick={handleClick}>
+        <div className="popup text-white" onClick={handleClick}>
           Art Credits
           <span className="popuptext" id="myPopup">
             3D Models: {""}

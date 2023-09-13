@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="relative z-0 w-full h-screen mx-auto bg-background-contact"
+      className="relative z-0 w-full h-screen mx-auto bg-background-contact text-white"
     >
       <div
         className={`${styles.paddingX} max-w-7xl mx-auto flex flex-row items-end gap-5 justify-end pt-4 w-full`}
