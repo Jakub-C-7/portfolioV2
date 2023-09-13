@@ -38,7 +38,7 @@ const ServiceCard = ({ index, title, icon }) => {
 
 const About = () => {
   return (
-    <ComponentLayout>
+    <ComponentLayout className="text-white">
       <>
         <motion.div
           // className="sm:mt-20 mt-10 mb-10 flex xs:flex-row flex-row mx-auto"

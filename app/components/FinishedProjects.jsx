@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const FinishedProjects = () => {
   return (
-    <ComponentLayout>
+    <ComponentLayout className="text-white">
       <>
         <motion.div
           // className="sm:mt-20 mt-10 mb-10 flex xs:flex-row-reverse self-center h-3/4"
