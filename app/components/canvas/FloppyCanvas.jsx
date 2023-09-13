@@ -38,33 +38,33 @@ const FloppyCanvas = ({ icon }) => {
   }, []);
 
   return (
-    // <Canvas
-    //   className="cursor-pointer"
-    //   frameloop="always" //Always animates all floppy disks
-    //   shadows
-    //   camera={{
-    //     position: [0, -0.5, 4],
-    //     fov: 50,
-    //     rotation: [0, 0, 0],
-    //     near: 0.1,
-    //   }}
-    //   gl={{ preserveDrawingBuffer: true }}
-    // >
-    <Suspense fallback={<CanvasLoader />}>
-      <OrbitControls
-        enableZoom={false}
-        enablePan={false}
-        // maxPolarAngle={Math.PI / 2 - 0.3} // Stop users scrolling below
-        // minAzimuthAngle={0.5}
-        // minPolarAngle={Math.PI / 2 - 0.4}
-      />
-      <ambientLight intensity={0.25} />
-      <directionalLight position={[0, 0, 0.05]} />
-      <Float speed={2} rotationIntensity={1} floatIntensity={2}>
-        <Floppy imgUrl={icon} isMobile={isMobile} />
-      </Float>
-    </Suspense>
-    // </Canvas>
+    <Canvas
+      className="cursor-pointer"
+      frameloop="always" //Always animates all floppy disks
+      shadows
+      camera={{
+        position: [0, -0.5, 4],
+        fov: 50,
+        rotation: [0, 0, 0],
+        near: 0.1,
+      }}
+      gl={{ preserveDrawingBuffer: true }}
+    >
+      <Suspense fallback={<CanvasLoader />}>
+        <OrbitControls
+          enableZoom={false}
+          enablePan={false}
+          // maxPolarAngle={Math.PI / 2 - 0.3} // Stop users scrolling below
+          // minAzimuthAngle={0.5}
+          // minPolarAngle={Math.PI / 2 - 0.4}
+        />
+        <ambientLight intensity={0.25} />
+        <directionalLight position={[0, 0, 0.05]} />
+        <Float speed={2} rotationIntensity={1} floatIntensity={2}>
+          <Floppy imgUrl={icon} isMobile={isMobile} />
+        </Float>
+      </Suspense>
+    </Canvas>
   );
 };
 
