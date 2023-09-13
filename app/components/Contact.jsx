@@ -58,35 +58,35 @@ const Contact = () => {
           <input type="hidden" name="form-name" value="contact" />
           <div>
             <label htmlFor="myName">Your name</label>
-            <div className="opacity-50 text-white">
+            <div className="opacity-70 text-white">
               <input
                 id="myName"
                 type="text"
                 name="name"
                 required
-                className="bg-black opacity-50"
+                className="bg-black opacity-70"
               />
             </div>
           </div>
 
           <div>
             <label htmlFor="myEmail">Your email address</label>
-            <div className="opacity-50 text-white">
+            <div className="opacity-70 text-white">
               <input
                 id="myEmail"
                 type="email"
                 name="email"
                 required
-                className="bg-black opacity-50"
+                className="bg-black opacity-70"
               />
             </div>
           </div>
 
           <div>
             <label htmlFor="myMessage">Your message</label>
-            <div className="opacity-50 text-white">
+            <div className="opacity-70 text-white">
               <textarea
-                className="bg-black opacity-50 resize-none"
+                className="bg-black opacity-70 resize-none"
                 id="myMessage"
                 name="body"
                 rows="6"
