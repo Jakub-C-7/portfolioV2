@@ -3,8 +3,26 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import CampCanvas from "./canvas/CampCanvas";
+import { useInView } from "react-intersection-observer";
+import { invalidate } from "@react-three/fiber";
 
 const Welcome = () => {
+  const [ref, inView] = useInView({
+    /* Optional options */
+    triggerOnce: false,
+    rootMargin: "0px 0px",
+  });
+
+  let canvasDisplay;
+
+  if (inView) {
+    {
+      canvasDisplay = <CampCanvas />;
+      console.log(inView);
+    }
+  } else {
+    canvasDisplay = "";
+  }
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
@@ -15,7 +33,7 @@ const Welcome = () => {
           <div className="w-1 sm:h-80 h-40 bg-[#FF3562]"></div>
         </div> */}
 
-        <div className="flex flex-col">
+        <div ref={ref} className="flex flex-col">
           <h1 className={`${styles.headText} text-white`}>
             hi, I'm <span className="text-[#FF3562]">Jakub</span>
           </h1>
@@ -25,7 +43,8 @@ const Welcome = () => {
         </div>
       </div>
 
-      <CampCanvas />
+      {/* <CampCanvas /> */}
+      {canvasDisplay}
 
       <div className="absolute xs:bottom-3 bottom-3 w-full h-1/4 flex justify-center items-end">
         <a href="#about">
