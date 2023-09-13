@@ -62,7 +62,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="hover:bg-[#E37A3E] rounded">
+          <div className="hover:bg-[#E37A3E] rounded max-w-fit">
             <button type="submit" id="submit_button">
               Send Message
             </button>
