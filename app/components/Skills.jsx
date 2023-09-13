@@ -54,7 +54,7 @@ const Skills = () => {
                 rotation: [0, 0, 0],
                 near: 0.1,
               }}
-              gl={{ preserveDrawingBuffer: true }}
+              gl={{ preserveDrawingBuffer: false }}
             >
               <FloppyCanvas icon={technology.icon} />
               {/* <motion.div className="absolute select-none active:pointer-events-none text-tertiary top-0 left-0 w-full h-2/3 text-center opacity-0 transition duration-700 hover:opacity-100 hover:scale-110">
