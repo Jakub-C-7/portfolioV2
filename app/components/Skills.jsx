@@ -38,7 +38,7 @@ const Skills = () => {
         ))}
       </div> */}
 
-      <div className="flex flex-wrap justify-center gap-5 mt-8 w-3/4 mx-auto">
+      <div className="flex flex-wrap justify-center mt-8 w-3/4 mx-auto">
         {technologies.map((technology) => (
           <div
             className="relative sm:w-1/4 sm:h-1/4 w-1/3 h-1/3"

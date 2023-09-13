@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <section
       id="footer"
-      className="relative z-0 w-full h-1/5 mx-auto bg-background-contact"
+      className="relative z-0 w-full h-1/5 mx-auto bg-background-contact pt-16"
     >
       <div className="self-center">
         <h2
