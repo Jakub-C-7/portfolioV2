@@ -20,7 +20,7 @@ const Footer = () => {
         >
           thank you!
         </h2>
-        <p className={"text-white flex justify-center text-center"}>
+        <p className={"text-white flex justify-center text-center ml-2 mr-2"}>
           for stopping by my campsite, find out even more about me below
         </p>
       </div>
