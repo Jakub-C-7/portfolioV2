@@ -57,7 +57,7 @@ const About = () => {
               className="sm:object-cover object-scale-down rounded-lg w-[150px] h-[150px] sm:w-[250px] sm:h-[250px] "
               width={300}
               height={300}
-              src={"/me-full-square-colour.jpg"}
+              src="/me-full-square-colour.jpg"
               alt="Picture of the author"
             />
           </motion.div>
