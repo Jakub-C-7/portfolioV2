@@ -16,7 +16,7 @@ export function Workbench(isMobile) {
   return (
     <group
       // frustumCulled={false}
-      scale={isMobile.isMobile ? 3.5 : 4}
+      scale={isMobile.isMobile ? 3 : 4}
       dispose={null}
       rotation={[0, 0.7, 0]}
     >

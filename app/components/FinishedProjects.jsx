@@ -26,7 +26,7 @@ const FinishedProjects = () => {
 
         <Carousel
           showArrows={true}
-          className="xl:w-1/2 w-full mx-auto"
+          className="w-4/5 xl:w-3/4 2xl:w-1/2 mx-auto"
           // onChange={onChange}
           // onClickItem={onClickItem}
           // onClickThumb={onClickThumb}
@@ -55,14 +55,19 @@ const FinishedProjects = () => {
                 className="max-h-[300px] sm:max-w-[500px] max-w-[300px] aspect-auto"
               />
 
-              <motion.p className="mt-6">{project.description}</motion.p>
+              <motion.p className="mt-6 text-xs lg:text-lg">
+                {project.description}
+              </motion.p>
 
               <motion.div
                 className="mt-10 mb-0 flex gap-5 flex-wrap justify-items-center"
                 variants={fadeIn("", "", 0.1, 1)}
               >
                 {project.tags.map((tech, techIndex) => (
-                  <p key={`${index}-${techIndex}`} className={`${tech.color}`}>
+                  <p
+                    key={`${index}-${techIndex}`}
+                    className={`${tech.color} text-xs md:text-base mb-2`}
+                  >
                     #{tech.name}
                   </p>
                 ))}
