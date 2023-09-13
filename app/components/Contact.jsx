@@ -2,8 +2,25 @@
 
 import { styles } from "../styles";
 import TreeSwingCanvas from "./canvas/TreeSwingCanvas";
+import { useInView } from "react-intersection-observer";
 
 const Contact = () => {
+  const [ref, inView] = useInView({
+    /* Optional options */
+    triggerOnce: false,
+    rootMargin: "0px 0px",
+  });
+
+  let canvasDisplay;
+
+  if (inView) {
+    {
+      canvasDisplay = <TreeSwingCanvas />;
+    }
+  } else {
+    canvasDisplay = "";
+  }
+
   return (
     <section
       id="contact"
@@ -22,8 +39,12 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="absolute top-0 left-0 h-full w-full bg-background-contact">
-        <TreeSwingCanvas />
+      <div
+        ref={ref}
+        className="absolute top-0 left-0 h-full w-full bg-background-contact"
+      >
+        {/* <TreeSwingCanvas /> */}
+        {canvasDisplay}
       </div>
 
       <div className="absolute sm:bottom-30 bottom-10 left-10 w-4/5 ">

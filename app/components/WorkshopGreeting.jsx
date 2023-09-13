@@ -4,11 +4,29 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 import WorkbenchCanvas from "./canvas/WorkbenchCanvas";
+import { useInView } from "react-intersection-observer";
 
 const WorkshopGreeting = () => {
+  const [ref, inView] = useInView({
+    /* Optional options */
+    triggerOnce: false,
+    rootMargin: "0px 0px",
+  });
+
+  let canvasDisplay;
+
+  if (inView) {
+    {
+      canvasDisplay = <WorkbenchCanvas />;
+    }
+  } else {
+    canvasDisplay = "";
+  }
+
   return (
     <section
       id="workshop"
+      ref={ref}
       className="relative w-3/4 h-70v lg:h-80v mx-auto mb-16"
     >
       <motion.div
@@ -23,7 +41,8 @@ const WorkshopGreeting = () => {
         </motion.div>
       </motion.div>
 
-      <WorkbenchCanvas />
+      {/* <WorkbenchCanvas /> */}
+      {canvasDisplay}
     </section>
   );
 };
