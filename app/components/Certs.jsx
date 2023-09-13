@@ -59,7 +59,7 @@ const Certs = () => {
           <h2 className={styles.sectionHeadText}>certifications</h2>
         </div>
       </motion.div>
-      <motion.div className="mt-12 mb-12 flex flex-wrap gap-10 justify-center w-3/4 mx-auto">
+      <motion.div className="mt-12 mb-12 flex flex-wrap gap-10 justify-center w-full lg:w-4/5 mx-auto">
         {certifications.map((cert, index) => (
           <Link key={cert.title + "_link"} href={cert.link} target="_blank">
             <CertCard key={cert.title} index={index} {...cert} />
