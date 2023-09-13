@@ -69,7 +69,7 @@ const Skills = () => {
 
       <div
         ref={ref}
-        className="flex flex-wrap justify-center mt-8 w-3/4 mx-auto min-h-screen"
+        className="flex flex-wrap justify-center mt-8 w-full lg:w-3/4 mx-auto min-h-screen gap-0"
       >
         {canvasDisplay}
       </div>
