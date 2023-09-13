@@ -38,7 +38,7 @@ const ServiceCard = ({ index, title, icon }) => {
 
 const About = () => {
   return (
-    <ComponentLayout className="text-white">
+    <ComponentLayout>
       <>
         <motion.div
           // className="sm:mt-20 mt-10 mb-10 flex xs:flex-row flex-row mx-auto"
@@ -90,7 +90,7 @@ const About = () => {
         <a href="#workshop">
           <motion.p
             // className="mt-4 mb-0 select-none pointer-events-none"
-            className={`${styles.paddingX} max-w-7xl mx-auto text-center select-none hover:underline mt-8 mb-16`}
+            className={`${styles.paddingX} max-w-7xl mx-auto text-center select-none hover:underline mt-8 mb-16 text-white`}
             variants={fadeIn("", "", 0.1, 1)}
           >
             come on down, <span className="text-tertiary">find out more</span>{" "}

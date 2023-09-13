@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const FinishedProjects = () => {
   return (
-    <ComponentLayout className="text-white">
+    <ComponentLayout>
       <>
         <motion.div
           // className="sm:mt-20 mt-10 mb-10 flex xs:flex-row-reverse self-center h-3/4"
@@ -34,7 +34,7 @@ const FinishedProjects = () => {
           {finishedProjects.map((project, index) => (
             <motion.div
               variants={textVariant()}
-              className="rounded-lg bg-[#211e35] p-6 w-full h-full mx-auto"
+              className="rounded-lg bg-[#211e35] p-6 w-full h-full mx-auto text-white"
               key={index}
             >
               <motion.div
