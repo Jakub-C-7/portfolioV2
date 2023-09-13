@@ -49,22 +49,22 @@ const technologies = [
     name: "Scala",
     icon: "tech/scala.png",
   },
-  {
-    name: "MongoDB",
-    icon: "tech/mongodb.png",
-  },
-  {
-    name: "JavaScript",
-    icon: "tech/javascript.png",
-  },
+  // {
+  //   name: "MongoDB",
+  //   icon: "tech/mongodb.png",
+  // },
+  // {
+  //   name: "JavaScript",
+  //   icon: "tech/javascript.png",
+  // },
   {
     name: "React JS",
     icon: "tech/reactjs.png",
   },
-  {
-    name: "Tailwind CSS",
-    icon: "tech/tailwind.png",
-  },
+  // {
+  //   name: "Tailwind CSS",
+  //   icon: "tech/tailwind.png",
+  // },
   {
     name: "Three JS",
     icon: "tech/threejs.svg",
