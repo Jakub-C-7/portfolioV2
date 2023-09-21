@@ -167,6 +167,31 @@ const finishedProjects = [
     source_code_link: "https://github.com/Jakub-C-7/PowerOfAI",
   },
   {
+    name: "DungeonCrawler (in progress)",
+    description:
+      "DungeonCrawler (name pending!) is an in progress top-down role-playing-game, being developed in a small `indie` dev team. Some of the game's features we are proud of most thus far are: procedural room generation, engaging combat, enemy pathfinding, character progression, and handmade pixel-art. Stay tuned for more!​",
+    tags: [
+      {
+        name: "csharp",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "unity",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "git",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "aseprite",
+        color: "green-text-gradient",
+      },
+    ],
+    image: "../projectImages/unity_logo.png",
+    source_code_link: "https://github.com/Jakub-C-7/",
+  },
+  {
     name: "UNIty Social Platform",
     description:
       "Platform aimed at improving the experience of an academic journey through provisioning ease in peer-to-peer interaction. The secure web-application utilises modern development tools such as Java (Spring Boot) for full-stack development.",
