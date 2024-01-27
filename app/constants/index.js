@@ -146,6 +146,31 @@ const testimonials = [
 
 const finishedProjects = [
   {
+    name: "Dungeons & Development",
+    description:
+      "A unique gamification twist on personal development that incorporates fantasy themes and enables you to develop personally, and professionally, all whilst feeling like you're playing a game! Embark on quests, customise your character, and experience fantasy visuals!",
+    tags: [
+      {
+        name: "Ruby",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Ruby on Rails",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Docker",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "PostgreSQL",
+        color: "green-text-gradient",
+      },
+    ],
+    image: "../projectImages/dungeonsAndDevelopment_logo.png",
+    source_code_link: "https://github.com/Jakub-C-7/dungeons_and_development",
+  },
+  {
     name: "Power of AI",
     description:
       "An AI powered program which takes an image as input, analyses the image, and returns output information in several categories. The program is able to generate a description of the image, scan for, recognise, and tag objects, analyse colour, scan for and recognise faces, the age, and gender of the face, recognise celebrities, landmarks, and brands. The program can also use AI to moderate content for three categories: Adult, Gory, and Racy.",
