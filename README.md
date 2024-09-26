@@ -1,6 +1,8 @@
 ## Check it out!
 
-This is a a portfolio website written with cutting-edge technologies aimed to showcase the versatility of my abilities and capability of rapidly adapting to new concepts. This one was a load of fun!
+A portfolio website written with modern technologies aimed to stretch the capabilities of the web.
+
+This one was a load of fun!
 
 ## Technologies
 

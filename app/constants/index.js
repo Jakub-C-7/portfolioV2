@@ -23,7 +23,7 @@ const services = [
     icon: "introIcons/computer.gif",
   },
   {
-    title: "Cloud Developer",
+    title: "Coach & Leader",
     icon: "introIcons/network.gif",
   },
   {
@@ -58,11 +58,11 @@ const technologies = [
     icon: "tech/kubernetes.png",
   },
   {
-    name: "git",
+    name: "Git",
     icon: "tech/git.png",
   },
   {
-    name: "docker",
+    name: "Docker",
     icon: "tech/docker.png",
   },
 ];
