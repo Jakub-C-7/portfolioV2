@@ -73,7 +73,7 @@ const About = () => {
             <motion.p className="mt-10 mb-0" variants={fadeIn("", "", 0.1, 1)}>
               I'm an avid programmer with a{" "}
               <span className="text-tertiary">huge passion for tech</span> and an
-              even bigger passion for having a{" "}
+              even bigger passion for making a{" "}
               <span className="text-tertiary">meaningful impact</span>.
             </motion.p>
           </div>
