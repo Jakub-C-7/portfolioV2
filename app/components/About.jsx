@@ -12,7 +12,7 @@ import ComponentLayout from "./layout";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt className="sm:w-[175px] w-full cursor-pointer">
+    <Tilt className="sm:w-[175px] w-full cursor-move">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
@@ -67,14 +67,14 @@ const About = () => {
               I'm a <span className="text-primary">Software Engineer</span> with
               over{" "}
               <span className="text-primary">6 years of coding experience</span>
-              , working remotely from (rarely) sunny 16°C Shropshire, England.
+              , working remotely from (rarely) sunny 16°C Newtown, Wales.
             </motion.p>
 
             <motion.p className="mt-10 mb-0" variants={fadeIn("", "", 0.1, 1)}>
               I'm an avid programmer with a{" "}
               <span className="text-tertiary">passion for tech</span> and an
               even bigger passion for{" "}
-              <span className="text-tertiary">creating cool things</span> with
+              <span className="text-tertiary">making a meaningful impact</span> with
               it!
             </motion.p>
           </div>
@@ -87,16 +87,40 @@ const About = () => {
             <ServiceCard key={service.title} index={index} {...service} />
           ))}
         </motion.div>
-        <a href="#workshop">
+        <a className="bg-white hover:font-extrabold" href="/files/cv.pdf" download>
+             <motion.p
+                // className="mt-4 mb-0 select-none pointer-events-none"
+                className={`${styles.paddingX} max-w-7xl mx-auto text-center select-none mt-8 mb-4 text-white`}
+                variants={fadeIn("", "", 0.1, 1)}
+             >
+                click <span className="text-tertiary">below</span> to download my cv
+             </motion.p>
+             <Image
+                id="downloadImage"
+                width={100}
+                height={100}
+                alt="cv download icon"
+                src="/generalIcons/download.gif"
+                className={`max-w-7xl mx-auto rounded-md`}
+             />
+        </a>
+        <a className="hover:font-extrabold" href="#workshop">
           <motion.p
             // className="mt-4 mb-0 select-none pointer-events-none"
-            className={`${styles.paddingX} max-w-7xl mx-auto text-center select-none hover:underline mt-8 mb-16 text-white`}
+            className={`${styles.paddingX} max-w-7xl mx-auto text-center select-none mt-16 mb-8 text-white`}
             variants={fadeIn("", "", 0.1, 1)}
           >
             come on down, <span className="text-tertiary">find out more</span>{" "}
             about me!
           </motion.p>
-        </a>{" "}
+          <Image
+                width={50}
+                height={50}
+                alt="arrow down icon"
+                src="/generalIcons/arrow-down.png"
+                className={`max-w-7xl mx-auto invert`}
+          />
+        </a>
       </>
     </ComponentLayout>
   );
