@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Jakub Chamera | Portfolio",
   description:
-    "Portfolio website for Jakub Chamera, a Software Engineer working from rainy Shrewsbury, England.",
+    "Portfolio website for Jakub Chamera, a Software Engineer working from rainy Newtown, Wales.",
 };
 
 export default function RootLayout({ children }) {
