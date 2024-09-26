@@ -21,7 +21,7 @@ const Footer = () => {
           thank you!
         </h2>
         <p className={"text-white flex justify-center text-center ml-2 mr-2"}>
-          for stopping by my campsite, find out even more about me below
+          for stopping by my campsite, get in touch or find out even more about me below
         </p>
       </div>
       <div
@@ -64,43 +64,49 @@ const Footer = () => {
           />
         </a>
       </div>
-
       <div
         className={`${styles.paddingX} flex mx-auto max-w-[20%] mb-6 hover:bg-[#E37A3E] rounded justify-center text-center`}
       >
         <div className="popup text-white" onClick={handleClick}>
           Art Credits
           <span className="popuptext" id="myPopup">
-            3D Models: {""}
-            <a
-              href={"https://skfb.ly/6V9Ru"}
-              className="hover:bg-[#E37A3E]"
-              target="_blank"
-            >
-              Campsite {""}
-            </a>
-            <a
-              href={"https://skfb.ly/o9ytH"}
-              className="hover:bg-[#E37A3E]"
-              target="_blank"
-            >
-              Workbench {""}
-            </a>
-            <a
-              href={"https://skfb.ly/6XnUu"}
-              className="hover:bg-[#E37A3E]"
-              target="_blank"
-            >
-              Floppy Disk {""}
-            </a>
-            <a
-              href={"https://skfb.ly/LZLq"}
-              className="hover:bg-[#E37A3E]"
-              target="_blank"
-            >
-              Autumn Tree Swing{" "}
-            </a>
-          </span>
+              <p className="cursor-default">3D Models: {""} </p>
+              <a
+                href={"https://www.flaticon.com"}
+                className="hover:bg-[#E37A3E]"
+                target="_blank"
+              >
+                Icons{" "}
+              </a>
+              <a
+                href={"https://skfb.ly/6V9Ru"}
+                className="hover:bg-[#E37A3E]"
+                target="_blank"
+              >
+                Campsite {""}
+              </a>
+              <a
+                href={"https://skfb.ly/o9ytH"}
+                className="hover:bg-[#E37A3E]"
+                target="_blank"
+              >
+                Workbench {""}
+              </a>
+              <a
+                href={"https://skfb.ly/6XnUu"}
+                className="hover:bg-[#E37A3E]"
+                target="_blank"
+              >
+                Floppy Disk {""}
+              </a>
+              <a
+                href={"https://skfb.ly/LZLq"}
+                className="hover:bg-[#E37A3E]"
+                target="_blank"
+              >
+                Autumn Tree Swing{" "}
+              </a>
+            </span>
         </div>
       </div>
 
