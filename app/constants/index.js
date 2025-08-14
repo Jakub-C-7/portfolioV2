@@ -46,11 +46,11 @@ const technologies = [
     icon: "tech/python.png",
   },
   {
-    name: "Scala",
-    icon: "tech/scala.png",
+    name: "Ruby on Rails",
+    icon: "tech/ruby.png",
   },
   {
-    name: "React JS",
+    name: "React",
     icon: "tech/reactjs.png",
   },
   {
@@ -58,8 +58,8 @@ const technologies = [
     icon: "tech/kubernetes.png",
   },
   {
-    name: "Git",
-    icon: "tech/git.png",
+    name: "Large Language Models",
+    icon: "tech/llm.png",
   },
   {
     name: "Docker",
@@ -68,7 +68,7 @@ const technologies = [
 ];
 
 const certifications = [
-   {
+  {
     title: "Certified Kubernetes Application Developer",
     icon: "/certificationImages/ckad.png",
     link: "https://www.credly.com/badges/2ddd8051-bd92-421c-ad57-b6526bb97aba/public_url",
