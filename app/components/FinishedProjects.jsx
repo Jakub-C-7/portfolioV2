@@ -21,7 +21,7 @@ const FinishedProjects = () => {
           variants={textVariant()}
           id="finishedprojects"
         >
-          <h2 className={styles.sectionHeadText}>works and projects</h2>
+          <h2 className={styles.sectionHeadText}>personal projects</h2>
         </motion.div>
 
         <Carousel

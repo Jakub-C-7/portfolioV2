@@ -104,14 +104,6 @@ const About = () => {
              />
         </a>
         <a className="hover:font-extrabold" href="#workshop">
-          <motion.p
-            // className="mt-4 mb-0 select-none pointer-events-none"
-            className={`${styles.paddingX} max-w-7xl mx-auto text-center select-none mt-16 mb-8 text-white`}
-            variants={fadeIn("", "", 0.1, 1)}
-          >
-            come on down, <span className="text-tertiary">find out more</span>{" "}
-            about me!
-          </motion.p>
           <Image
                 width={50}
                 height={50}
