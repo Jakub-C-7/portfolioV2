@@ -46,11 +46,11 @@ const technologies = [
     icon: "tech/python.png",
   },
   {
-    name: "Scala",
-    icon: "tech/scala.png",
+    name: "Ruby on Rails",
+    icon: "tech/ruby.png",
   },
   {
-    name: "React JS",
+    name: "React",
     icon: "tech/reactjs.png",
   },
   {
@@ -58,8 +58,8 @@ const technologies = [
     icon: "tech/kubernetes.png",
   },
   {
-    name: "Git",
-    icon: "tech/git.png",
+    name: "Large Language Models",
+    icon: "tech/llm.png",
   },
   {
     name: "Docker",
@@ -69,9 +69,14 @@ const technologies = [
 
 const certifications = [
   {
+    title: "Certified Kubernetes Application Developer",
+    icon: "/certificationImages/ckad.png",
+    link: "https://www.credly.com/badges/2ddd8051-bd92-421c-ad57-b6526bb97aba/public_url",
+  },
+  {
     title: "Azure Virtual Desktop Specialty",
     icon: "/certificationImages/az_140.png",
-    link: "https://www.credly.com/badges/5e4876e4-1eb3-4022-8b50-59677c77ffef/public_url",
+    link: "https://learn.microsoft.com/api/credentials/share/en-gb/JakubChamera/1E7F541FF6CEA960?sharingId=3832208EE55AC60l",
   },
   {
     title: "Azure AI Engineer Associate",
